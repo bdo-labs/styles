@@ -1,0 +1,68 @@
+// Fonts
+$font-family: "jaf-bernino-sans-condensed", Sans-Serif;
+
+// Colors
+$body-color: white;
+$frame-header-color: black;
+
+$dark-grey: #7d7d7d;
+$middle-grey: #878787;
+$light-grey: #e6e6e6;
+$gold-color: #f5a623;
+
+$good-color: #708e50;
+$warning-color: #d29628;
+$danger-color: #ac4139;
+
+$strategi-color: #2eafa4;
+$dialog-color: $dark-grey;
+
+$separator-color: #efefef;
+
+$data-box-bg-color: $light-grey;
+$interactive-box-bg-color: white;
+$interactive-box-border-color: $dark-grey;
+
+$module-text-color: $middle-grey;
+
+
+// Dimensions
+$header-height: 51px;
+$box-margin: 10px;
+$box-padding: 20px;
+$box-border: 5px;
+
+// Other variables
+$transition-speed: 500ms;
+
+
+//== Media queries breakpoints
+// Extra small screen / phone
+$screen-xs-min: 480px !default;
+
+// Small screen / tablet
+$screen-sm-min: 768px !default;
+
+
+// Medium screen / desktop
+$screen-md-min: 992px !default;
+
+// Large screen / wide desktop
+$screen-lg-min: 1200px !default;
+
+// So media queries don't overlap when required, provide a maximum
+$screen-xs-max: ($screen-sm-min - 1) !default;
+$screen-sm-max: ($screen-md-min - 1) !default;
+$screen-md-max: ($screen-lg-min - 1) !default;
+
+
+//Mixins
+@mixin disable-user-select {
+	cursor: default;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}

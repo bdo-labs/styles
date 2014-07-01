@@ -1,0 +1,65 @@
+.suite-module {
+	margin: 0;
+	float: left;
+	
+	&.xlarge {
+		width: 100%;
+	}
+	&.large {
+		width: 80%;
+	}
+	&.medium {
+		width: 50%;
+		
+		.interactive-box {
+			height: 375px - 2*($box-padding + $box-border);
+		}
+	}
+	&.small {
+		width: 33.33%;
+		
+		.data-box {
+			height: 250px - (2*$box-padding);
+		}
+	}
+	&.xsmall {
+		width: 20%;
+	}
+}
+
+.interactive-box, .data-box {
+		margin: $box-margin;
+	}
+
+.interactive-box {
+	border: solid 5px $interactive-box-border-color;
+	
+	padding: 20px;
+	
+	> h1 {
+		font-size: 36px;
+		margin: 0 0 10px;
+		font-weight: bold;
+		color: $strategi-color;
+	}
+}
+
+.fun-fact-box {
+	float: none;
+	clear: both;
+	margin: 0 auto;
+	
+	// This fixes the collapsing margin, but can also be used to distance the box further from the main content
+	padding-top: 1px;
+	padding-bottom: 1px;
+	
+	.interactive-box {
+		border-color: $strategi-color;
+		padding: 20px;
+	}
+}
+
+.data-box {
+	padding-top: 5px; // Solves collapsing margins
+	background: $data-box-bg-color;
+}

@@ -1,0 +1,24 @@
+.action-button {
+	color: $dark-grey;
+	font-size: 0.75em;
+
+	.text {
+		font-size: 1.3em;
+		margin-right: 5px;
+		vertical-align: middle;
+		position: relative;
+		bottom: 2px;
+	}
+
+	&.button {
+		border: solid 2px;
+		border-radius: 15px;
+		padding: 8px;
+	}
+
+	i.fa {
+		border: solid 2px;
+		border-radius: 50%;
+		padding: 4px;
+	}
+}

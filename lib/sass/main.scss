@@ -1,0 +1,58 @@
+// External
+@import 'font-awesome';
+
+// Internal
+@import 'variables-and-mixins';
+@import 'frame';
+@import 'boxes';
+@import 'elements';
+@import 'charts';
+
+* {
+	font-family: $font-family;
+}
+
+// http://angular-ui.github.io/bootstrap/
+.nav, .pagination, .carousel, .panel-title a {
+	cursor: pointer;
+}
+
+.status-color {
+	&.good {
+		color: $good-color;
+	}
+
+	&.warning {
+		color: $warning-color;
+	}
+
+	&.danger {
+		color: $danger-color;
+	}
+}
+
+.module-content-wrapper {
+	width: 100%;
+}
+
+.portrait {
+	border-radius: 50px;
+}
+
+.table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	
+	td, th {
+		padding: 8px;
+	}
+	
+	th {
+		border-bottom: 2px solid #dddddd;
+	}
+	
+	tr {
+		border-bottom: 1px solid #dddddd;
+	}
+	
+}
