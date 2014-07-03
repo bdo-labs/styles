@@ -2407,6 +2407,10 @@ nav.header .user-controls span {
   border-radius: 50%;
   padding: 4px;
 }
+/* line 25, sass/elements/_action-button.scss */
+.action-button i.fa-fw {
+  padding: 3px 1px;
+}
 
 /* line 1, sass/charts/_scorecard-charts.scss */
 #scorecard-overview-chart {
