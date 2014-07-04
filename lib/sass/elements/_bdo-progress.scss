@@ -3,13 +3,24 @@
 	padding: 5px 0;
 
 	// Caret indicates progress
-	.indicator {
-		@extend .fa, .fa-caret-up:before;
+	.indicator-caret {
+		
+		// @extend .fa
+		display: inline-block;
+		font-family: FontAwesome;
+		font-style: normal;
+		font-weight: normal;
+		line-height: 1;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+
+		// @extend .fa-caret-up:before
+		content: "\f0d8"; 
 
 		position: absolute;
 		top: 5px;
 
-		// Let's center the carot!
+		// Let's center the caret!
 		width: 8px;
 		margin: 0 0 0 -4px;
 
