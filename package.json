@@ -13,7 +13,16 @@
 		"js": {
 			"entry": "lib/index.js",
 			"output": "build/build.js"
+		},
+		"css": {
+			"entry": "lib/bundle.css",
+			"output": "build/bundle.css",
+			"assets": {
+				"dest": "build/assets/",
+				"prefix": "assets/"
+			}
 		}
+
 	},
 	"browserify": {
 		"transform": [
