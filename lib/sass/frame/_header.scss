@@ -42,7 +42,12 @@ nav.header {
 		}
 
 		&.strategi:before {
-			background-image: url('../gfx/logo_strategi.png');
+			/*
+			 * The logos should either be moved into their own package
+			 * which should be a dependency for this, or they should be
+			 * a part of this package.
+			*/ 
+			// background-image: url('../gfx/logo_strategi.png');
 			background-color: $strategi-color;
 		}
 	}

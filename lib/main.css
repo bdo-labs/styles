@@ -55,20 +55,24 @@ nav.header .breadcrumbs:before {
 }
 /* line 44, sass/frame/_header.scss */
 nav.header .breadcrumbs.strategi:before {
-  background-image: url("../gfx/logo_strategi.png");
+  /*
+   * The logos should either be moved into their own package
+   * which should be a dependency for this, or they should be
+   * a part of this package.
+  */
   background-color: #2eafa4;
 }
-/* line 50, sass/frame/_header.scss */
+/* line 55, sass/frame/_header.scss */
 nav.header .user-controls {
   position: relative;
   display: inline-block;
 }
-/* line 56, sass/frame/_header.scss */
+/* line 61, sass/frame/_header.scss */
 nav.header .user-controls img {
   height: 30px;
   width: 30px;
 }
-/* line 62, sass/frame/_header.scss */
+/* line 67, sass/frame/_header.scss */
 nav.header .user-controls span {
   display: inline-block;
   position: absolute;
@@ -191,7 +195,15 @@ nav.header .user-controls span {
   padding: 5px 0;
 }
 /* line 6, sass/elements/_bdo-progress.scss */
-.bdo-progress .indicator {
+.bdo-progress .indicator-caret {
+  display: inline-block;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\f0d8";
   position: absolute;
   top: 5px;
   width: 8px;
@@ -201,36 +213,36 @@ nav.header .user-controls span {
   color: #aaa;
   text-shadow: 0 -2px white;
 }
-/* line 25, sass/elements/_bdo-progress.scss */
+/* line 36, sass/elements/_bdo-progress.scss */
 .bdo-progress .bar {
   background: #aaa;
   width: 100%;
   height: 4px;
   clear: both;
 }
-/* line 32, sass/elements/_bdo-progress.scss */
+/* line 43, sass/elements/_bdo-progress.scss */
 .bdo-progress .bar > div {
   height: 100%;
   width: 0%;
 }
-/* line 38, sass/elements/_bdo-progress.scss */
+/* line 49, sass/elements/_bdo-progress.scss */
 .bdo-progress .high {
   background: #ccc;
   float: right;
 }
-/* line 43, sass/elements/_bdo-progress.scss */
+/* line 54, sass/elements/_bdo-progress.scss */
 .bdo-progress .low {
   background: #888;
 }
-/* line 48, sass/elements/_bdo-progress.scss */
+/* line 59, sass/elements/_bdo-progress.scss */
 .bdo-progress .high .high {
   background: #708e50;
 }
-/* line 52, sass/elements/_bdo-progress.scss */
+/* line 63, sass/elements/_bdo-progress.scss */
 .bdo-progress .medium.bar {
   background: #d29628;
 }
-/* line 56, sass/elements/_bdo-progress.scss */
+/* line 67, sass/elements/_bdo-progress.scss */
 .bdo-progress .low .low {
   background: #ac4139;
 }
@@ -255,10 +267,14 @@ nav.header .user-controls span {
   padding: 8px;
 }
 /* line 19, sass/elements/_action-button.scss */
-.action-button i.fa, .action-button .bdo-progress i.indicator, .bdo-progress .action-button i.indicator {
+.action-button i.fa {
   border: solid 2px;
   border-radius: 50%;
   padding: 4px;
+}
+/* line 25, sass/elements/_action-button.scss */
+.action-button i.fa-fw {
+  padding: 3px 1px;
 }
 
 /* line 1, sass/charts/_scorecard-charts.scss */
@@ -274,53 +290,53 @@ nav.header .user-controls span {
   height: 100px;
 }
 
-/* line 11, sass/main.scss */
+/* line 8, sass/main.scss */
 * {
   font-family: "jaf-bernino-sans-condensed", Sans-Serif;
 }
 
-/* line 16, sass/main.scss */
+/* line 13, sass/main.scss */
 .nav, .pagination, .carousel, .panel-title a {
   cursor: pointer;
 }
 
-/* line 21, sass/main.scss */
+/* line 18, sass/main.scss */
 .status-color.good {
   color: #708e50;
 }
-/* line 25, sass/main.scss */
+/* line 22, sass/main.scss */
 .status-color.warning {
   color: #d29628;
 }
-/* line 29, sass/main.scss */
+/* line 26, sass/main.scss */
 .status-color.danger {
   color: #ac4139;
 }
 
-/* line 34, sass/main.scss */
+/* line 31, sass/main.scss */
 .module-content-wrapper {
   width: 100%;
 }
 
-/* line 38, sass/main.scss */
+/* line 35, sass/main.scss */
 .portrait, nav.header .user-controls img {
   border-radius: 50px;
 }
 
-/* line 42, sass/main.scss */
+/* line 39, sass/main.scss */
 .table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-/* line 46, sass/main.scss */
+/* line 43, sass/main.scss */
 .table td, .table th {
   padding: 8px;
 }
-/* line 50, sass/main.scss */
+/* line 47, sass/main.scss */
 .table th {
   border-bottom: 2px solid #dddddd;
 }
-/* line 54, sass/main.scss */
+/* line 51, sass/main.scss */
 .table tr {
   border-bottom: 1px solid #dddddd;
 }

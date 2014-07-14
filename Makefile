@@ -42,5 +42,5 @@ test: build
 clean:
 	rm -fr build
 
-.PHONY: clean test
+.PHONY: clean test build
 

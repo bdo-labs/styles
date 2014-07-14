@@ -3,7 +3,7 @@
 	"version": "0.0.0",
 	"description": "The common styles for bdo suite",
 	"main": "lib/index.js",
-	"style": "lib/main.css",
+	"style": "lib/bundle.css",
 	"repository": "git://github.com/bdo-labs/styles.git",
 	"license": "MIT",
 	"scripts": {
@@ -13,7 +13,16 @@
 		"js": {
 			"entry": "lib/index.js",
 			"output": "build/build.js"
+		},
+		"css": {
+			"entry": "lib/bundle.css",
+			"output": "build/bundle.css",
+			"assets": {
+				"dest": "build/assets/",
+				"prefix": "assets/"
+			}
 		}
+
 	},
 	"browserify": {
 		"transform": [
