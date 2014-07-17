@@ -2,18 +2,10 @@
 	color: $dark-grey;
 	font-size: 0.75em;
 
-	.text {
-		font-size: 1.3em;
-		margin-right: 5px;
-		vertical-align: middle;
-		position: relative;
-		bottom: 2px;
-	}
-
-	&.button {
-		border: solid 2px;
-		border-radius: 15px;
-		padding: 8px;
+	&.main-action {
+		position: absolute;
+		top: 5px;
+		right: 5px;
 	}
 
 	i.fa {

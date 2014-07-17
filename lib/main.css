@@ -158,18 +158,29 @@ nav.header .user-controls span {
 
 /* line 34, sass/_boxes.scss */
 .interactive-box {
+  position: relative;
   border: solid 5px #7d7d7d;
   padding: 20px;
 }
-/* line 39, sass/_boxes.scss */
+/* line 41, sass/_boxes.scss */
 .interactive-box > h1 {
   font-size: 36px;
   margin: 0 0 10px;
   font-weight: bold;
   color: #2eafa4;
 }
-
 /* line 47, sass/_boxes.scss */
+.interactive-box > h1 > a {
+  text-decoration: none;
+  color: #2eafa4;
+}
+/* line 54, sass/_boxes.scss */
+.interactive-box h2 > a, .interactive-box h3 > a, .interactive-box h4 > a {
+  text-decoration: none;
+  color: black;
+}
+
+/* line 61, sass/_boxes.scss */
 .fun-fact-box {
   float: none;
   clear: both;
@@ -177,13 +188,13 @@ nav.header .user-controls span {
   padding-top: 1px;
   padding-bottom: 1px;
 }
-/* line 56, sass/_boxes.scss */
+/* line 70, sass/_boxes.scss */
 .fun-fact-box .interactive-box {
   border-color: #2eafa4;
   padding: 20px;
 }
 
-/* line 62, sass/_boxes.scss */
+/* line 76, sass/_boxes.scss */
 .data-box {
   padding-top: 5px;
   background: #e6e6e6;
@@ -253,28 +264,38 @@ nav.header .user-controls span {
   font-size: 0.75em;
 }
 /* line 5, sass/elements/_action-button.scss */
-.action-button .text {
-  font-size: 1.3em;
-  margin-right: 5px;
-  vertical-align: middle;
-  position: relative;
-  bottom: 2px;
+.action-button.main-action {
+  position: absolute;
+  top: 5px;
+  right: 5px;
 }
-/* line 13, sass/elements/_action-button.scss */
-.action-button.button {
-  border: solid 2px;
-  border-radius: 15px;
-  padding: 8px;
-}
-/* line 19, sass/elements/_action-button.scss */
+/* line 11, sass/elements/_action-button.scss */
 .action-button i.fa {
   border: solid 2px;
   border-radius: 50%;
   padding: 4px;
 }
-/* line 25, sass/elements/_action-button.scss */
+/* line 17, sass/elements/_action-button.scss */
 .action-button i.fa-fw {
   padding: 3px 1px;
+}
+
+/* line 1, sass/elements/_row-separated-table.scss */
+.row-separated-table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* line 5, sass/elements/_row-separated-table.scss */
+.row-separated-table td, .row-separated-table th {
+  padding: 8px;
+}
+/* line 9, sass/elements/_row-separated-table.scss */
+.row-separated-table th {
+  border-bottom: 2px solid #dddddd;
+}
+/* line 13, sass/elements/_row-separated-table.scss */
+.row-separated-table tr {
+  border-bottom: 1px solid #dddddd;
 }
 
 /* line 1, sass/charts/_scorecard-charts.scss */
@@ -321,22 +342,4 @@ nav.header .user-controls span {
 /* line 35, sass/main.scss */
 .portrait, nav.header .user-controls img {
   border-radius: 50px;
-}
-
-/* line 39, sass/main.scss */
-.table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-/* line 43, sass/main.scss */
-.table td, .table th {
-  padding: 8px;
-}
-/* line 47, sass/main.scss */
-.table th {
-  border-bottom: 2px solid #dddddd;
-}
-/* line 51, sass/main.scss */
-.table tr {
-  border-bottom: 1px solid #dddddd;
 }
