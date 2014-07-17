@@ -5,32 +5,31 @@ $font-family: "jaf-bernino-sans-condensed", Sans-Serif;
 $body-color: white;
 $frame-header-color: black;
 
-$dark-grey: #7d7d7d;
-$middle-grey: #878787;
-$light-grey: #e6e6e6;
+$grey: #969696;
 $gold-color: #f5a623;
 
 $good-color: #708e50;
 $warning-color: #d29628;
 $danger-color: #ac4139;
 
-$strategi-color: #2eafa4;
-$dialog-color: $dark-grey;
+$strategi-color: #34495e;
 
 $separator-color: #efefef;
 
-$data-box-bg-color: $light-grey;
-$interactive-box-bg-color: white;
-$interactive-box-border-color: $dark-grey;
+$primary-box-bg-color: white;
+$primary-box-border-color: $grey;
+$secondary-box-bg-color: $grey;
 
-$module-text-color: $middle-grey;
+$secondary-box-text-color: white;
+$descriptive-text-color: $grey;
 
 
 // Dimensions
 $header-height: 51px;
 $box-margin: 10px;
-$box-padding: 20px;
-$box-border: 5px;
+$primary-box-padding-y: 20px;
+$primary-box-border: 5px;
+$secondary-box-padding-y: 15px;
 
 // Other variables
 $transition-speed: 500ms;
@@ -42,7 +41,6 @@ $screen-xs-min: 480px !default;
 
 // Small screen / tablet
 $screen-sm-min: 768px !default;
-
 
 // Medium screen / desktop
 $screen-md-min: 992px !default;

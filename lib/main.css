@@ -60,7 +60,7 @@ nav.header .breadcrumbs.strategi:before {
    * which should be a dependency for this, or they should be
    * a part of this package.
   */
-  background-color: #2eafa4;
+  background-color: #34495e;
 }
 /* line 55, sass/frame/_header.scss */
 nav.header .user-controls {
@@ -81,7 +81,7 @@ nav.header .user-controls span {
   height: 16px;
   width: 16px;
   border-radius: 8px;
-  background-color: #2eafa4;
+  background-color: #34495e;
   text-align: center;
   font-size: 12px;
   color: white;
@@ -121,66 +121,71 @@ nav.header .user-controls span {
 .suite-module {
   margin: 0;
   float: left;
+  line-height: 1.5em;
 }
-/* line 5, sass/_boxes.scss */
+/* line 7, sass/_boxes.scss */
+.suite-module .descriptive-text {
+  color: #969696;
+}
+/* line 11, sass/_boxes.scss */
 .suite-module.xlarge {
   width: 100%;
 }
-/* line 8, sass/_boxes.scss */
+/* line 14, sass/_boxes.scss */
 .suite-module.large {
   width: 80%;
 }
-/* line 11, sass/_boxes.scss */
+/* line 17, sass/_boxes.scss */
 .suite-module.medium {
   width: 50%;
 }
-/* line 14, sass/_boxes.scss */
-.suite-module.medium .interactive-box {
-  height: 325px;
+/* line 20, sass/_boxes.scss */
+.suite-module.medium .primary-box {
+  height: 250px;
 }
-/* line 18, sass/_boxes.scss */
+/* line 24, sass/_boxes.scss */
 .suite-module.small {
   width: 33.33%;
 }
-/* line 21, sass/_boxes.scss */
-.suite-module.small .data-box {
-  height: 210px;
+/* line 27, sass/_boxes.scss */
+.suite-module.small .secondary-box {
+  height: 100px;
 }
-/* line 25, sass/_boxes.scss */
+/* line 31, sass/_boxes.scss */
 .suite-module.xsmall {
   width: 20%;
 }
 
-/* line 30, sass/_boxes.scss */
-.interactive-box, .data-box {
+/* line 36, sass/_boxes.scss */
+.primary-box, .secondary-box {
   margin: 10px;
 }
 
-/* line 34, sass/_boxes.scss */
-.interactive-box {
+/* line 40, sass/_boxes.scss */
+.primary-box {
   position: relative;
-  border: solid 5px #7d7d7d;
-  padding: 20px;
+  border: solid 5px #969696;
+  padding: 20px 25px;
 }
-/* line 41, sass/_boxes.scss */
-.interactive-box > h1 {
+/* line 47, sass/_boxes.scss */
+.primary-box > h1 {
   font-size: 36px;
   margin: 0 0 10px;
   font-weight: bold;
-  color: #2eafa4;
+  color: #34495e;
 }
-/* line 47, sass/_boxes.scss */
-.interactive-box > h1 > a {
+/* line 53, sass/_boxes.scss */
+.primary-box > h1 > a {
   text-decoration: none;
-  color: #2eafa4;
+  color: #34495e;
 }
-/* line 54, sass/_boxes.scss */
-.interactive-box h2 > a, .interactive-box h3 > a, .interactive-box h4 > a {
+/* line 60, sass/_boxes.scss */
+.primary-box h2 > a, .primary-box h3 > a, .primary-box h4 > a {
   text-decoration: none;
   color: black;
 }
 
-/* line 61, sass/_boxes.scss */
+/* line 67, sass/_boxes.scss */
 .fun-fact-box {
   float: none;
   clear: both;
@@ -188,16 +193,26 @@ nav.header .user-controls span {
   padding-top: 1px;
   padding-bottom: 1px;
 }
-/* line 70, sass/_boxes.scss */
-.fun-fact-box .interactive-box {
-  border-color: #2eafa4;
-  padding: 20px;
+/* line 76, sass/_boxes.scss */
+.fun-fact-box .primary-box {
+  border-color: #34495e;
+  padding: 30px;
 }
 
-/* line 76, sass/_boxes.scss */
-.data-box {
-  padding-top: 5px;
-  background: #e6e6e6;
+/* line 82, sass/_boxes.scss */
+.secondary-box {
+  padding: 15px 30px;
+  background: #969696;
+  color: white;
+}
+/* line 87, sass/_boxes.scss */
+.secondary-box > h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+/* line 92, sass/_boxes.scss */
+.secondary-box > ul, .secondary-box > p {
+  margin: 0;
 }
 
 /* line 1, sass/elements/_bdo-progress.scss */
@@ -260,7 +275,7 @@ nav.header .user-controls span {
 
 /* line 1, sass/elements/_action-button.scss */
 .action-button {
-  color: #7d7d7d;
+  color: #969696;
   font-size: 0.75em;
 }
 /* line 5, sass/elements/_action-button.scss */
@@ -316,30 +331,30 @@ nav.header .user-controls span {
   font-family: "jaf-bernino-sans-condensed", Sans-Serif;
 }
 
-/* line 13, sass/main.scss */
-.nav, .pagination, .carousel, .panel-title a {
-  cursor: pointer;
+/* line 12, sass/main.scss */
+body {
+  font-size: 14px;
 }
 
-/* line 18, sass/main.scss */
+/* line 17, sass/main.scss */
 .status-color.good {
   color: #708e50;
 }
-/* line 22, sass/main.scss */
+/* line 21, sass/main.scss */
 .status-color.warning {
   color: #d29628;
 }
-/* line 26, sass/main.scss */
+/* line 25, sass/main.scss */
 .status-color.danger {
   color: #ac4139;
 }
 
-/* line 31, sass/main.scss */
+/* line 30, sass/main.scss */
 .module-content-wrapper {
   width: 100%;
 }
 
-/* line 35, sass/main.scss */
+/* line 34, sass/main.scss */
 .portrait, nav.header .user-controls img {
   border-radius: 50px;
 }

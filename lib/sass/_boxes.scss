@@ -2,6 +2,12 @@
 	margin: 0;
 	float: left;
 	
+	line-height: 1.5em;
+
+	.descriptive-text {
+		color: $descriptive-text-color;
+	}
+
 	&.xlarge {
 		width: 100%;
 	}
@@ -11,15 +17,15 @@
 	&.medium {
 		width: 50%;
 		
-		.interactive-box {
-			height: 375px - 2*($box-padding + $box-border);
+		.primary-box {
+			height: 300px - 2*($primary-box-padding-y + $primary-box-border);
 		}
 	}
 	&.small {
 		width: 33.33%;
 		
-		.data-box {
-			height: 250px - (2*$box-padding);
+		.secondary-box {
+			height: 130px - (2*$secondary-box-padding-y);
 		}
 	}
 	&.xsmall {
@@ -27,16 +33,16 @@
 	}
 }
 
-.interactive-box, .data-box {
+.primary-box, .secondary-box {
 		margin: $box-margin;
 	}
 
-.interactive-box {
+.primary-box {
 	position: relative;
 
-	border: solid 5px $interactive-box-border-color;
+	border: solid 5px $primary-box-border-color;
 	
-	padding: 20px;
+	padding: $primary-box-padding-y 25px;
 	
 	> h1 {
 		font-size: 36px;
@@ -67,13 +73,23 @@
 	padding-top: 1px;
 	padding-bottom: 1px;
 	
-	.interactive-box {
+	.primary-box {
 		border-color: $strategi-color;
-		padding: 20px;
+		padding: 30px;
 	}
 }
 
-.data-box {
-	padding-top: 5px; // Solves collapsing margins
-	background: $data-box-bg-color;
+.secondary-box {
+	padding: $secondary-box-padding-y 30px;
+	background: $secondary-box-bg-color;
+	color: $secondary-box-text-color;
+
+	> h3 {
+		margin-top: 0;
+		margin-bottom: 10px;
+	}
+
+	> ul, > p {
+		margin: 0;
+	}
 }
