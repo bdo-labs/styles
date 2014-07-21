@@ -29,7 +29,6 @@ TESTS:=$(shell find lib -name '*.test.js')
 build: node_modules $(SRC)
 	mkdir -p $@
 	atomify
-	cp index.html $@/
 	@echo ""
 	@echo "    styles was built!"
 	@echo ""
@@ -38,7 +37,7 @@ node_modules: package.json
 	npm install
 
 test: build
-	karma start	
+	karma start
 
 clean:
 	rm -fr build
