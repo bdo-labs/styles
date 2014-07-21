@@ -2,10 +2,8 @@
 	margin: 0;
 	float: left;
 
-	line-height: 1.5em;
-
-	.descriptive-text {
-		color: $descriptive-text-color;
+	p {
+		line-height: 1.5em;
 	}
 
 	&.large {
@@ -16,7 +14,7 @@
 		width: 50%;
 
 		.primary-box {
-			height: 300px - 2*($primary-box-padding-y + $primary-box-border);
+			height: 400px - 2*($box-padding-y + $primary-box-border);
 		}
 	}
 
@@ -24,25 +22,25 @@
 		width: 33.33%;
 
 		.secondary-box {
-			height: 130px - (2*$secondary-box-padding-y);
+			height: 220px - (2*$box-padding-y);
 		}
 	}
 }
 
 .primary-box, .secondary-box {
 		margin: $box-margin;
-	}
+}
 
 .primary-box {
 	position: relative;
 
 	border: solid 5px $primary-box-border-color;
 
-	padding: $primary-box-padding-y 25px;
+	padding: $box-padding-y $box-padding-x;
 
 	> h1 {
-		font-size: 36px;
-		margin: 0 0 10px;
+		font-size: $huge-font;
+		margin: 0 0 36px;
 		font-weight: bold;
 		color: $strategi-color;
 
@@ -57,6 +55,10 @@
 			text-decoration: none;
 			color: black;
 		}
+	}
+
+	.descriptive-text {
+		color: $descriptive-text-color;
 	}
 }
 
@@ -76,13 +78,15 @@
 }
 
 .secondary-box {
-	padding: $secondary-box-padding-y 30px;
+	padding: $box-padding-y $box-padding-x;
 	background: $secondary-box-bg-color;
 	color: $secondary-box-text-color;
 
 	> h3 {
 		margin-top: 0;
 		margin-bottom: 10px;
+		font-size: $large-font;
+		font-weight: $semi-bold;
 	}
 
 	> ul, > p {
