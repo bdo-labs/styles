@@ -215,64 +215,6 @@ nav.header .user-controls span {
   margin: 0;
 }
 
-/* line 1, sass/elements/_bdo-progress.scss */
-.bdo-progress {
-  position: relative;
-  padding: 5px 0;
-}
-/* line 6, sass/elements/_bdo-progress.scss */
-.bdo-progress .indicator-caret {
-  display: inline-block;
-  font-family: FontAwesome;
-  font-style: normal;
-  font-weight: normal;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  content: "\f0d8";
-  position: absolute;
-  top: 5px;
-  width: 8px;
-  margin: 0 0 0 -4px;
-  text-align: center;
-  font-size: 7px;
-  color: #aaa;
-  text-shadow: 0 -2px white;
-}
-/* line 36, sass/elements/_bdo-progress.scss */
-.bdo-progress .bar {
-  background: #aaa;
-  width: 100%;
-  height: 4px;
-  clear: both;
-}
-/* line 43, sass/elements/_bdo-progress.scss */
-.bdo-progress .bar > div {
-  height: 100%;
-  width: 0%;
-}
-/* line 49, sass/elements/_bdo-progress.scss */
-.bdo-progress .high {
-  background: #ccc;
-  float: right;
-}
-/* line 54, sass/elements/_bdo-progress.scss */
-.bdo-progress .low {
-  background: #888;
-}
-/* line 59, sass/elements/_bdo-progress.scss */
-.bdo-progress .high .high {
-  background: #708e50;
-}
-/* line 63, sass/elements/_bdo-progress.scss */
-.bdo-progress .medium.bar {
-  background: #d29628;
-}
-/* line 67, sass/elements/_bdo-progress.scss */
-.bdo-progress .low .low {
-  background: #ac4139;
-}
-
 /* line 1, sass/elements/_action-button.scss */
 .action-button {
   color: #969696;
