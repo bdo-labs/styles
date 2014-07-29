@@ -3,120 +3,6 @@ body {
   background-color: white;
 }
 
-/* line 5, sass/_frame.scss */
-#wrapper {
-  padding-left: 0;
-  transition: all 500ms;
-}
-
-/* line 10, sass/_frame.scss */
-#page-wrapper {
-  width: 100%;
-  overflow: hidden;
-  transition: all 500ms;
-}
-
-/**
- * Top main header with icon and controls on the right
- */
-/* line 6, sass/frame/_header.scss */
-nav.header {
-  width: 100%;
-}
-/* line 10, sass/frame/_header.scss */
-nav.header .right-controls {
-  float: right;
-  margin-right: 10px;
-  display: none;
-}
-/* line 16, sass/frame/_header.scss */
-nav.header .right-controls > li {
-  display: inline-block;
-  margin: 15px 5px;
-}
-/* line 20, sass/frame/_header.scss */
-nav.header .right-controls > li > a, nav.header .right-controls > li a:hover {
-  color: inherit;
-}
-/* line 26, sass/frame/_header.scss */
-nav.header .breadcrumbs {
-  font-size: 1.3em;
-}
-/* line 29, sass/frame/_header.scss */
-nav.header .breadcrumbs:before {
-  content: ' ';
-  background: black no-repeat;
-  background-size: contain;
-  display: inline-block;
-  width: 30px;
-  height: 30px;
-  margin: 15px;
-  vertical-align: -80%;
-}
-/* line 44, sass/frame/_header.scss */
-nav.header .breadcrumbs.strategi:before {
-  /*
-   * The logos should either be moved into their own package
-   * which should be a dependency for this, or they should be
-   * a part of this package.
-  */
-  background-color: #34495e;
-}
-/* line 55, sass/frame/_header.scss */
-nav.header .user-controls {
-  position: relative;
-  display: inline-block;
-}
-/* line 61, sass/frame/_header.scss */
-nav.header .user-controls img {
-  height: 30px;
-  width: 30px;
-}
-/* line 67, sass/frame/_header.scss */
-nav.header .user-controls span {
-  display: inline-block;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  height: 16px;
-  width: 16px;
-  border-radius: 8px;
-  background-color: #34495e;
-  text-align: center;
-  font-size: 12px;
-  color: white;
-}
-
-/* line 1, sass/frame/_footer.scss */
-#footer {
-  width: 100%;
-  overflow: hidden;
-}
-/* line 5, sass/frame/_footer.scss */
-#footer a, #footer a:hover {
-  text-decoration: none;
-}
-
-/* line 10, sass/frame/_footer.scss */
-#footer-logo {
-  margin: 0 2em 0.5em 0;
-  float: right;
-  text-transform: uppercase;
-  color: white;
-  cursor: default;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  cursor: pointer;
-}
-/* line 19, sass/frame/_footer.scss */
-#footer-logo img {
-  margin-left: 10px;
-}
-
 /* line 1, sass/_boxes.scss */
 .suite-module {
   margin: 0;
@@ -297,6 +183,6 @@ body {
 }
 
 /* line 34, sass/main.scss */
-.portrait, nav.header .user-controls img {
+.portrait {
   border-radius: 50px;
 }

@@ -2,17 +2,5 @@ body {
 	background-color: $body-color;
 }
 
-#wrapper {
-	padding-left: 0;
-	transition: all $transition-speed;
-}
-
-#page-wrapper {
-	width: 100%;
-	overflow: hidden;
-	transition: all $transition-speed;
-}
-
 //import elements
-@import 'frame/header';
-@import 'frame/footer';
+@import 'frame/menu';
