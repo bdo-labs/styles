@@ -1,101 +1,249 @@
-/*
-Syntax error: Undefined variable: "$semi-bold".
-        on line 9 of c:/Users/cn2063/bdo-labs/styles/lib/sass/frame/_menu.scss
-        from line 6 of c:/Users/cn2063/bdo-labs/styles/lib/sass/_frame.scss
-        from line 3 of c:/Users/cn2063/bdo-labs/styles/lib/sass/main.scss
+@charset "CP850";
+/* line 1, sass/_frame.scss */
+body {
+  background-color: white;
+}
 
-Backtrace:
-c:/Users/cn2063/bdo-labs/styles/lib/sass/frame/_menu.scss:9
-c:/Users/cn2063/bdo-labs/styles/lib/sass/_frame.scss:6
-c:/Users/cn2063/bdo-labs/styles/lib/sass/main.scss:3
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/script/variable.rb:49:in `_perform'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/script/node.rb:40:in `perform'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:298:in `visit_prop'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:37:in `visit'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:100:in `visit'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:53:in `map'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:320:in `visit_rule'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:37:in `visit'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:100:in `visit'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:53:in `map'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:320:in `visit_rule'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:37:in `visit'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:100:in `visit'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:227:in `block in visit_import'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:227:in `map'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:227:in `visit_import'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:37:in `visit'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:100:in `visit'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:227:in `block in visit_import'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:227:in `map'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:227:in `visit_import'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:37:in `visit'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:100:in `visit'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:53:in `map'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:128:in `visit_root'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:37:in `visit'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:100:in `visit'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:7:in `visit'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/root_node.rb:20:in `render'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/engine.rb:315:in `_render'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/engine.rb:262:in `render'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.3/lib/compass/compiler.rb:140:in `block (2 levels) in compile'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.3/lib/compass/compiler.rb:126:in `timed'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.3/lib/compass/compiler.rb:139:in `block in compile'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.3/lib/compass/logger.rb:45:in `red'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.3/lib/compass/compiler.rb:138:in `compile'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.3/lib/compass/compiler.rb:118:in `compile_if_required'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.3/lib/compass/compiler.rb:103:in `block (2 levels) in run'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.3/lib/compass/compiler.rb:101:in `each'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.3/lib/compass/compiler.rb:101:in `block in run'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.3/lib/compass/compiler.rb:126:in `timed'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.3/lib/compass/compiler.rb:100:in `run'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.3/lib/compass/commands/watch_project.rb:147:in `recompile'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/path.rb:73:in `call'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/path.rb:73:in `run_callback'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/path.rb:55:in `callback_action'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/path.rb:35:in `update'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/state/directory.rb:39:in `block in modified'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/state/directory.rb:37:in `each'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/state/directory.rb:37:in `modified'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/state/directory.rb:18:in `refresh'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/backends/polling.rb:17:in `block (2 levels) in run'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/backends/polling.rb:17:in `each'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/backends/polling.rb:17:in `block in run'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/backends/polling.rb:15:in `loop'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/backends/polling.rb:15:in `run'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/monitor.rb:26:in `run'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/fssm-0.2.10/lib/fssm.rb:70:in `monitor'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.3/lib/compass/commands/watch_project.rb:87:in `perform'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.3/lib/compass/commands/base.rb:18:in `execute'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.3/lib/compass/commands/project_base.rb:19:in `execute'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.3/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.3/lib/compass/exec/sub_command_ui.rb:15:in `run!'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.3/bin/compass:30:in `block in <top (required)>'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.3/bin/compass:44:in `call'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.3/bin/compass:44:in `<top (required)>'
-c:/Ruby193/bin/compass:23:in `load'
-c:/Ruby193/bin/compass:23:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Syntax error: Undefined variable: \"$semi-bold\".\A         on line 9 of c:/Users/cn2063/bdo-labs/styles/lib/sass/frame/_menu.scss\A         from line 6 of c:/Users/cn2063/bdo-labs/styles/lib/sass/_frame.scss\A         from line 3 of c:/Users/cn2063/bdo-labs/styles/lib/sass/main.scss"; }
+/* line 1, sass/frame/_menu.scss */
+nav {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+/* line 7, sass/frame/_menu.scss */
+nav a {
+  text-decoration: none;
+  font-weight: 600;
+}
+/* line 12, sass/frame/_menu.scss */
+nav ul {
+  list-style: none;
+  padding-left: 0;
+}
+/* line 17, sass/frame/_menu.scss */
+nav > div > ul > li {
+  display: inline-block;
+}
+/* line 21, sass/frame/_menu.scss */
+nav .top-menu {
+  border-bottom: 5px dotted #c8c8c8;
+  font-size: 22px;
+  font-weight: 600;
+}
+/* line 26, sass/frame/_menu.scss */
+nav .top-menu a {
+  color: #c8c8c8;
+}
+/* line 29, sass/frame/_menu.scss */
+nav .top-menu a.active {
+  color: #969696;
+}
+/* line 34, sass/frame/_menu.scss */
+nav .top-menu > ul {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 40, sass/frame/_menu.scss */
+nav .top-menu li {
+  margin: 0 5%;
+}
+/* line 46, sass/frame/_menu.scss */
+nav .filter-menu a {
+  color: black;
+}
+/* line 50, sass/frame/_menu.scss */
+nav .filter-menu .bdo-dropdown > a:after {
+  content: "";
+  font-family: FontAwesome;
+  margin-left: 5px;
+}
+/* line 56, sass/frame/_menu.scss */
+nav .filter-menu li {
+  margin: 0 3%;
+}
+
+/* line 1, sass/_boxes.scss */
+.suite-module {
+  margin: 0;
+  float: left;
+  line-height: 1.5em;
+}
+/* line 7, sass/_boxes.scss */
+.suite-module .descriptive-text {
+  color: #969696;
+}
+/* line 11, sass/_boxes.scss */
+.suite-module.xlarge {
+  width: 100%;
+}
+/* line 14, sass/_boxes.scss */
+.suite-module.large {
+  width: 80%;
+}
+/* line 17, sass/_boxes.scss */
+.suite-module.medium {
+  width: 50%;
+}
+/* line 20, sass/_boxes.scss */
+.suite-module.medium .primary-box {
+  height: 250px;
+}
+/* line 24, sass/_boxes.scss */
+.suite-module.small {
+  width: 33.33%;
+}
+/* line 27, sass/_boxes.scss */
+.suite-module.small .secondary-box {
+  height: 100px;
+}
+/* line 31, sass/_boxes.scss */
+.suite-module.xsmall {
+  width: 20%;
+}
+
+/* line 36, sass/_boxes.scss */
+.primary-box, .secondary-box {
+  margin: 10px;
+}
+
+/* line 40, sass/_boxes.scss */
+.primary-box {
+  position: relative;
+  border: solid 5px #969696;
+  padding: 20px 25px;
+}
+/* line 47, sass/_boxes.scss */
+.primary-box > h1 {
+  font-size: 36px;
+  margin: 0 0 10px;
+  font-weight: bold;
+  color: #34495e;
+}
+/* line 53, sass/_boxes.scss */
+.primary-box > h1 > a {
+  text-decoration: none;
+  color: #34495e;
+}
+/* line 60, sass/_boxes.scss */
+.primary-box h2 > a, .primary-box h3 > a, .primary-box h4 > a {
+  text-decoration: none;
+  color: black;
+}
+
+/* line 67, sass/_boxes.scss */
+.fun-fact-box {
+  float: none;
+  clear: both;
+  margin: 0 auto;
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+/* line 76, sass/_boxes.scss */
+.fun-fact-box .primary-box {
+  border-color: #34495e;
+  padding: 30px;
+}
+
+/* line 82, sass/_boxes.scss */
+.secondary-box {
+  padding: 15px 30px;
+  background: #969696;
+  color: white;
+}
+/* line 87, sass/_boxes.scss */
+.secondary-box > h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+/* line 92, sass/_boxes.scss */
+.secondary-box > ul, .secondary-box > p {
+  margin: 0;
+}
+
+/* line 1, sass/elements/_action-button.scss */
+.action-button {
+  color: #969696;
+  font-size: 0.75em;
+}
+/* line 5, sass/elements/_action-button.scss */
+.action-button.main-action {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+/* line 11, sass/elements/_action-button.scss */
+.action-button i.fa {
+  border: solid 2px;
+  border-radius: 50%;
+  padding: 4px;
+}
+/* line 17, sass/elements/_action-button.scss */
+.action-button i.fa-fw {
+  padding: 3px 1px;
+}
+
+/* line 1, sass/elements/_row-separated-table.scss */
+.row-separated-table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* line 5, sass/elements/_row-separated-table.scss */
+.row-separated-table td, .row-separated-table th {
+  padding: 8px;
+}
+/* line 9, sass/elements/_row-separated-table.scss */
+.row-separated-table th {
+  border-bottom: 2px solid #dddddd;
+}
+/* line 13, sass/elements/_row-separated-table.scss */
+.row-separated-table tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+/* line 1, sass/charts/_scorecard-charts.scss */
+#scorecard-overview-chart {
+  width: 80px;
+  height: 80px;
+  margin-top: -10px;
+}
+
+/* line 7, sass/charts/_scorecard-charts.scss */
+#scorecard-summary-chart {
+  width: 100px;
+  height: 100px;
+}
+
+/* line 8, sass/main.scss */
+* {
+  font-family: OpenSans, Sans-Serif;
+}
+
+/* line 12, sass/main.scss */
+body {
+  font-size: 16px;
+}
+
+/* line 17, sass/main.scss */
+.status-color.good {
+  color: #708e50;
+}
+/* line 21, sass/main.scss */
+.status-color.warning {
+  color: #d29628;
+}
+/* line 25, sass/main.scss */
+.status-color.danger {
+  color: #ac4139;
+}
+
+/* line 30, sass/main.scss */
+.module-content-wrapper {
+  width: 100%;
+}
+
+/* line 34, sass/main.scss */
+.portrait {
+  border-radius: 50px;
+}

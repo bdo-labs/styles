@@ -5,6 +5,7 @@ $font-family: OpenSans, Sans-Serif;
 $body-color: white;
 $frame-header-color: black;
 
+$light-grey: #c8c8c8;
 $grey: #969696;
 $gold-color: #f5a623;
 
@@ -31,8 +32,11 @@ $primary-box-padding-y: 20px;
 $primary-box-border: 5px;
 $secondary-box-padding-y: 15px;
 
-// Other variables
-$transition-speed: 500ms;
+$main-font-size: 16px;
+$large-font: 22px;
+$huge-font: 36px;
+
+$semi-bold: 600;
 
 
 //== Media queries breakpoints
