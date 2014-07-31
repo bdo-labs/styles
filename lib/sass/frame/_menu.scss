@@ -1,5 +1,4 @@
-nav {
-	width: 75%;
+header .menu {
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
@@ -14,11 +13,12 @@ nav {
 		padding-left: 0;
 	}
 
-	> div > ul > li {
+	> ul > li {
 		display: inline-block;
 	}
 
-	.top-menu {
+	&.top-menu {
+		width: 50%;
 		border-bottom: 5px dotted $light-grey;
 		font-size: $large-font;
 		font-weight: $semi-bold;
@@ -32,7 +32,6 @@ nav {
 		}
 
 		> ul {
-			width: 60%;
 			margin-left: auto;
 			margin-right: auto;
 		}
@@ -42,7 +41,9 @@ nav {
 		}
 	}
 
-	.filter-menu {
+	&.filter-menu {
+		margin-top: 2em;
+
 		a {
 			color: black;
 		}
@@ -53,7 +54,7 @@ nav {
 			margin-left: 5px;
 		}
 
-		li {
+		> ul > li {
 			margin: 0 3%;
 		}
 	}

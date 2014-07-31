@@ -5,62 +5,65 @@ body {
 }
 
 /* line 1, sass/frame/_menu.scss */
-nav {
-  width: 75%;
+header .menu {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
 }
-/* line 7, sass/frame/_menu.scss */
-nav a {
+/* line 6, sass/frame/_menu.scss */
+header .menu a {
   text-decoration: none;
   font-weight: 600;
 }
-/* line 12, sass/frame/_menu.scss */
-nav ul {
+/* line 11, sass/frame/_menu.scss */
+header .menu ul {
   list-style: none;
   padding-left: 0;
 }
-/* line 17, sass/frame/_menu.scss */
-nav > div > ul > li {
+/* line 16, sass/frame/_menu.scss */
+header .menu > ul > li {
   display: inline-block;
 }
-/* line 21, sass/frame/_menu.scss */
-nav .top-menu {
+/* line 20, sass/frame/_menu.scss */
+header .menu.top-menu {
+  width: 50%;
   border-bottom: 5px dotted #c8c8c8;
   font-size: 22px;
   font-weight: 600;
 }
 /* line 26, sass/frame/_menu.scss */
-nav .top-menu a {
+header .menu.top-menu a {
   color: #c8c8c8;
 }
 /* line 29, sass/frame/_menu.scss */
-nav .top-menu a.active {
+header .menu.top-menu a.active {
   color: #969696;
 }
 /* line 34, sass/frame/_menu.scss */
-nav .top-menu > ul {
-  width: 60%;
+header .menu.top-menu > ul {
   margin-left: auto;
   margin-right: auto;
 }
-/* line 40, sass/frame/_menu.scss */
-nav .top-menu li {
+/* line 39, sass/frame/_menu.scss */
+header .menu.top-menu li {
   margin: 0 5%;
 }
-/* line 46, sass/frame/_menu.scss */
-nav .filter-menu a {
+/* line 44, sass/frame/_menu.scss */
+header .menu.filter-menu {
+  margin-top: 2em;
+}
+/* line 47, sass/frame/_menu.scss */
+header .menu.filter-menu a {
   color: black;
 }
-/* line 50, sass/frame/_menu.scss */
-nav .filter-menu .bdo-dropdown > a:after {
+/* line 51, sass/frame/_menu.scss */
+header .menu.filter-menu .bdo-dropdown > a:after {
   content: "";
   font-family: FontAwesome;
   margin-left: 5px;
 }
-/* line 56, sass/frame/_menu.scss */
-nav .filter-menu li {
+/* line 57, sass/frame/_menu.scss */
+header .menu.filter-menu > ul > li {
   margin: 0 3%;
 }
 
