@@ -15,6 +15,14 @@
 
 		.primary-box {
 			height: 400px - 2*($box-padding-y + $primary-box-border);
+
+			@media screen and (max-width: $screen-sm-max) {
+				height: auto;
+			}
+		}
+
+		@media screen and (max-width: $screen-sm-max) {
+			width: 100%;
 		}
 	}
 
@@ -23,6 +31,14 @@
 
 		.secondary-box {
 			height: 220px - (2*$box-padding-y);
+
+			@media screen and (max-width: $screen-sm-max) {
+				height: auto;
+			}
+		}
+
+		@media screen and (max-width: $screen-sm-max) {
+			width: 100%;
 		}
 	}
 }
