@@ -63,6 +63,11 @@
 }
 
 .fun-fact-box {
+	@extend .primary-box;
+	border-color: $strategi-color;
+}
+
+.breaking-box {
 	float: none;
 	clear: both;
 	margin: 0 auto;
@@ -71,9 +76,14 @@
 	padding-top: 1px;
 	padding-bottom: 1px;
 
-	.primary-box {
-		border-color: $strategi-color;
+	.fun-fact-box {
 		padding: 30px;
+	}
+
+	@media screen and (max-width: $screen-sm-max) {
+		&.small {
+			width: 50%;
+		}
 	}
 }
 
