@@ -1,35 +1,31 @@
 .suite-module {
 	margin: 0;
 	float: left;
-	
+
 	line-height: 1.5em;
 
 	.descriptive-text {
 		color: $descriptive-text-color;
 	}
 
-	&.xlarge {
+	&.large {
 		width: 100%;
 	}
-	&.large {
-		width: 80%;
-	}
+
 	&.medium {
 		width: 50%;
-		
+
 		.primary-box {
 			height: 300px - 2*($primary-box-padding-y + $primary-box-border);
 		}
 	}
+
 	&.small {
 		width: 33.33%;
-		
+
 		.secondary-box {
 			height: 130px - (2*$secondary-box-padding-y);
 		}
-	}
-	&.xsmall {
-		width: 20%;
 	}
 }
 
@@ -41,9 +37,9 @@
 	position: relative;
 
 	border: solid 5px $primary-box-border-color;
-	
+
 	padding: $primary-box-padding-y 25px;
-	
+
 	> h1 {
 		font-size: 36px;
 		margin: 0 0 10px;
@@ -68,11 +64,11 @@
 	float: none;
 	clear: both;
 	margin: 0 auto;
-	
+
 	// This fixes the collapsing margin, but can also be used to distance the box further from the main content
 	padding-top: 1px;
 	padding-bottom: 1px;
-	
+
 	.primary-box {
 		border-color: $strategi-color;
 		padding: 30px;
