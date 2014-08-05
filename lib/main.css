@@ -77,89 +77,96 @@ header .menu.filter-menu > ul > li {
   line-height: 1.5em;
 }
 /* line 9, sass/_boxes.scss */
+.suite-module h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 22px;
+  font-weight: 600;
+}
+/* line 16, sass/_boxes.scss */
 .suite-module.large {
   width: 100%;
 }
-/* line 13, sass/_boxes.scss */
+/* line 20, sass/_boxes.scss */
 .suite-module.medium {
   width: 50%;
 }
-/* line 16, sass/_boxes.scss */
+/* line 23, sass/_boxes.scss */
 .suite-module.medium .primary-box, .suite-module.medium .fun-fact-box {
   height: 350px;
 }
 @media screen and (max-width: 991px) {
-  /* line 16, sass/_boxes.scss */
+  /* line 23, sass/_boxes.scss */
   .suite-module.medium .primary-box, .suite-module.medium .fun-fact-box {
     height: auto;
   }
 }
 @media screen and (max-width: 991px) {
-  /* line 13, sass/_boxes.scss */
+  /* line 20, sass/_boxes.scss */
   .suite-module.medium {
     width: 100%;
   }
 }
-/* line 29, sass/_boxes.scss */
+/* line 36, sass/_boxes.scss */
 .suite-module.small {
   width: 33.33%;
 }
-/* line 32, sass/_boxes.scss */
+/* line 39, sass/_boxes.scss */
 .suite-module.small .secondary-box {
   height: 180px;
 }
 @media screen and (max-width: 991px) {
-  /* line 32, sass/_boxes.scss */
+  /* line 39, sass/_boxes.scss */
   .suite-module.small .secondary-box {
     height: auto;
   }
 }
 @media screen and (max-width: 991px) {
-  /* line 29, sass/_boxes.scss */
+  /* line 36, sass/_boxes.scss */
   .suite-module.small {
     width: 100%;
   }
 }
 
-/* line 46, sass/_boxes.scss */
+/* line 53, sass/_boxes.scss */
 .primary-box, .fun-fact-box, .secondary-box {
   margin: 10px;
 }
 
-/* line 50, sass/_boxes.scss */
+/* line 57, sass/_boxes.scss */
 .primary-box, .fun-fact-box {
   position: relative;
   border: solid 5px #969696;
   padding: 20px 35px;
 }
-/* line 57, sass/_boxes.scss */
+/* line 64, sass/_boxes.scss */
 .primary-box > h1, .fun-fact-box > h1 {
   font-size: 36px;
   margin: 0 0 36px;
   font-weight: bold;
   color: #34495e;
 }
-/* line 63, sass/_boxes.scss */
+/* line 70, sass/_boxes.scss */
 .primary-box > h1 > a, .fun-fact-box > h1 > a {
   text-decoration: none;
   color: #34495e;
 }
-/* line 70, sass/_boxes.scss */
+/* line 77, sass/_boxes.scss */
 .primary-box h2 > a, .fun-fact-box h2 > a, .primary-box h3 > a, .fun-fact-box h3 > a, .primary-box h4 > a, .fun-fact-box h4 > a {
   text-decoration: none;
   color: black;
 }
-/* line 76, sass/_boxes.scss */
+/* line 83, sass/_boxes.scss */
 .primary-box .descriptive-text, .fun-fact-box .descriptive-text {
   color: #969696;
 }
 
-/* line 81, sass/_boxes.scss */
+/* line 88, sass/_boxes.scss */
 .fun-fact-box {
   border-color: #34495e;
 }
 
-/* line 86, sass/_boxes.scss */
+/* line 93, sass/_boxes.scss */
 .breaking-box {
   float: none;
   clear: both;
@@ -167,29 +174,22 @@ header .menu.filter-menu > ul > li {
   padding-top: 1px;
   padding-bottom: 1px;
 }
-/* line 95, sass/_boxes.scss */
+/* line 102, sass/_boxes.scss */
 .breaking-box .fun-fact-box {
   padding: 30px;
 }
 @media screen and (max-width: 991px) {
-  /* line 100, sass/_boxes.scss */
+  /* line 107, sass/_boxes.scss */
   .breaking-box.small {
     width: 50%;
   }
 }
 
-/* line 106, sass/_boxes.scss */
+/* line 113, sass/_boxes.scss */
 .secondary-box {
   padding: 20px 35px;
   background: #969696;
   color: white;
-}
-/* line 111, sass/_boxes.scss */
-.secondary-box > h3 {
-  margin-top: 0;
-  margin-bottom: 10px;
-  font-size: 22px;
-  font-weight: 600;
 }
 /* line 118, sass/_boxes.scss */
 .secondary-box > ul, .secondary-box > p {
