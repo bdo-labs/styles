@@ -16,5 +16,13 @@
 
 	i.fa-fw {
 		padding: 3px 1px;
+
+		@media screen and (max-width: $screen-sm-max) {
+			padding: 5px 1px;
+		}
+	}
+
+	@media screen and (max-width: $screen-sm-max) {
+		font-size: $large-font;
 	}
 }

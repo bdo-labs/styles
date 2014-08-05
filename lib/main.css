@@ -71,96 +71,127 @@ header .menu.filter-menu > ul > li {
 .suite-module {
   margin: 0;
   float: left;
+}
+/* line 5, sass/_boxes.scss */
+.suite-module p {
   line-height: 1.5em;
 }
-/* line 7, sass/_boxes.scss */
-.suite-module .descriptive-text {
-  color: #969696;
-}
-/* line 11, sass/_boxes.scss */
-.suite-module.xlarge {
+/* line 9, sass/_boxes.scss */
+.suite-module.large {
   width: 100%;
 }
-/* line 14, sass/_boxes.scss */
-.suite-module.large {
-  width: 80%;
-}
-/* line 17, sass/_boxes.scss */
+/* line 13, sass/_boxes.scss */
 .suite-module.medium {
   width: 50%;
 }
-/* line 20, sass/_boxes.scss */
-.suite-module.medium .primary-box {
-  height: 250px;
+/* line 16, sass/_boxes.scss */
+.suite-module.medium .primary-box, .suite-module.medium .fun-fact-box {
+  height: 350px;
 }
-/* line 24, sass/_boxes.scss */
+@media screen and (max-width: 991px) {
+  /* line 16, sass/_boxes.scss */
+  .suite-module.medium .primary-box, .suite-module.medium .fun-fact-box {
+    height: auto;
+  }
+}
+@media screen and (max-width: 991px) {
+  /* line 13, sass/_boxes.scss */
+  .suite-module.medium {
+    width: 100%;
+  }
+}
+/* line 29, sass/_boxes.scss */
 .suite-module.small {
   width: 33.33%;
 }
-/* line 27, sass/_boxes.scss */
+/* line 32, sass/_boxes.scss */
 .suite-module.small .secondary-box {
-  height: 100px;
+  height: 180px;
 }
-/* line 31, sass/_boxes.scss */
-.suite-module.xsmall {
-  width: 20%;
+@media screen and (max-width: 991px) {
+  /* line 32, sass/_boxes.scss */
+  .suite-module.small .secondary-box {
+    height: auto;
+  }
+}
+@media screen and (max-width: 991px) {
+  /* line 29, sass/_boxes.scss */
+  .suite-module.small {
+    width: 100%;
+  }
 }
 
-/* line 36, sass/_boxes.scss */
-.primary-box, .secondary-box {
+/* line 46, sass/_boxes.scss */
+.primary-box, .fun-fact-box, .secondary-box {
   margin: 10px;
 }
 
-/* line 40, sass/_boxes.scss */
-.primary-box {
+/* line 50, sass/_boxes.scss */
+.primary-box, .fun-fact-box {
   position: relative;
   border: solid 5px #969696;
-  padding: 20px 25px;
+  padding: 20px 35px;
 }
-/* line 47, sass/_boxes.scss */
-.primary-box > h1 {
+/* line 57, sass/_boxes.scss */
+.primary-box > h1, .fun-fact-box > h1 {
   font-size: 36px;
-  margin: 0 0 10px;
+  margin: 0 0 36px;
   font-weight: bold;
   color: #34495e;
 }
-/* line 53, sass/_boxes.scss */
-.primary-box > h1 > a {
+/* line 63, sass/_boxes.scss */
+.primary-box > h1 > a, .fun-fact-box > h1 > a {
   text-decoration: none;
   color: #34495e;
 }
-/* line 60, sass/_boxes.scss */
-.primary-box h2 > a, .primary-box h3 > a, .primary-box h4 > a {
+/* line 70, sass/_boxes.scss */
+.primary-box h2 > a, .fun-fact-box h2 > a, .primary-box h3 > a, .fun-fact-box h3 > a, .primary-box h4 > a, .fun-fact-box h4 > a {
   text-decoration: none;
   color: black;
 }
+/* line 76, sass/_boxes.scss */
+.primary-box .descriptive-text, .fun-fact-box .descriptive-text {
+  color: #969696;
+}
 
-/* line 67, sass/_boxes.scss */
+/* line 81, sass/_boxes.scss */
 .fun-fact-box {
+  border-color: #34495e;
+}
+
+/* line 86, sass/_boxes.scss */
+.breaking-box {
   float: none;
   clear: both;
   margin: 0 auto;
   padding-top: 1px;
   padding-bottom: 1px;
 }
-/* line 76, sass/_boxes.scss */
-.fun-fact-box .primary-box {
-  border-color: #34495e;
+/* line 95, sass/_boxes.scss */
+.breaking-box .fun-fact-box {
   padding: 30px;
 }
+@media screen and (max-width: 991px) {
+  /* line 100, sass/_boxes.scss */
+  .breaking-box.small {
+    width: 50%;
+  }
+}
 
-/* line 82, sass/_boxes.scss */
+/* line 106, sass/_boxes.scss */
 .secondary-box {
-  padding: 15px 30px;
+  padding: 20px 35px;
   background: #969696;
   color: white;
 }
-/* line 87, sass/_boxes.scss */
+/* line 111, sass/_boxes.scss */
 .secondary-box > h3 {
   margin-top: 0;
   margin-bottom: 10px;
+  font-size: 22px;
+  font-weight: 600;
 }
-/* line 92, sass/_boxes.scss */
+/* line 118, sass/_boxes.scss */
 .secondary-box > ul, .secondary-box > p {
   margin: 0;
 }
@@ -186,6 +217,18 @@ header .menu.filter-menu > ul > li {
 .action-button i.fa-fw {
   padding: 3px 1px;
 }
+@media screen and (max-width: 991px) {
+  /* line 17, sass/elements/_action-button.scss */
+  .action-button i.fa-fw {
+    padding: 5px 1px;
+  }
+}
+@media screen and (max-width: 991px) {
+  /* line 1, sass/elements/_action-button.scss */
+  .action-button {
+    font-size: 22px;
+  }
+}
 
 /* line 1, sass/elements/_row-separated-table.scss */
 .row-separated-table {
@@ -205,48 +248,35 @@ header .menu.filter-menu > ul > li {
   border-bottom: 1px solid #dddddd;
 }
 
-/* line 1, sass/charts/_scorecard-charts.scss */
-#scorecard-overview-chart {
-  width: 80px;
-  height: 80px;
-  margin-top: -10px;
-}
-
-/* line 7, sass/charts/_scorecard-charts.scss */
-#scorecard-summary-chart {
-  width: 100px;
-  height: 100px;
-}
-
-/* line 8, sass/main.scss */
+/* line 7, sass/main.scss */
 * {
   font-family: OpenSans, Sans-Serif;
 }
 
-/* line 12, sass/main.scss */
+/* line 11, sass/main.scss */
 body {
   font-size: 16px;
 }
 
-/* line 17, sass/main.scss */
+/* line 16, sass/main.scss */
 .status-color.good {
   color: #708e50;
 }
-/* line 21, sass/main.scss */
+/* line 20, sass/main.scss */
 .status-color.warning {
   color: #d29628;
 }
-/* line 25, sass/main.scss */
+/* line 24, sass/main.scss */
 .status-color.danger {
   color: #ac4139;
 }
 
-/* line 30, sass/main.scss */
+/* line 29, sass/main.scss */
 .module-content-wrapper {
   width: 100%;
 }
 
-/* line 34, sass/main.scss */
+/* line 33, sass/main.scss */
 .portrait {
   border-radius: 50px;
 }

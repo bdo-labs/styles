@@ -1,52 +1,62 @@
 .suite-module {
 	margin: 0;
 	float: left;
-	
-	line-height: 1.5em;
 
-	.descriptive-text {
-		color: $descriptive-text-color;
+	p {
+		line-height: 1.5em;
 	}
 
-	&.xlarge {
+	&.large {
 		width: 100%;
 	}
-	&.large {
-		width: 80%;
-	}
+
 	&.medium {
 		width: 50%;
-		
+
 		.primary-box {
-			height: 300px - 2*($primary-box-padding-y + $primary-box-border);
+			height: 400px - 2*($box-padding-y + $primary-box-border);
+
+			@media screen and (max-width: $screen-sm-max) {
+				height: auto;
+			}
+		}
+
+		@media screen and (max-width: $screen-sm-max) {
+			width: 100%;
 		}
 	}
+
 	&.small {
 		width: 33.33%;
-		
+
 		.secondary-box {
-			height: 130px - (2*$secondary-box-padding-y);
+			height: 220px - (2*$box-padding-y);
+
+			@media screen and (max-width: $screen-sm-max) {
+				height: auto;
+			}
 		}
-	}
-	&.xsmall {
-		width: 20%;
+
+		@media screen and (max-width: $screen-sm-max) {
+			width: 100%;
+		}
 	}
 }
 
 .primary-box, .secondary-box {
 		margin: $box-margin;
-	}
+}
 
 .primary-box {
 	position: relative;
 
 	border: solid 5px $primary-box-border-color;
-	
-	padding: $primary-box-padding-y 25px;
-	
+
+	padding: $box-padding-y $box-padding-x;
+
 	> h1 {
-		font-size: 36px;
-		margin: 0 0 10px;
+		font-size: $huge-font;
+		margin: 0 0 36px;
 		font-weight: bold;
 		color: $strategi-color;
 
@@ -62,31 +72,47 @@
 			color: black;
 		}
 	}
+
+	.descriptive-text {
+		color: $descriptive-text-color;
+	}
 }
 
 .fun-fact-box {
+	@extend .primary-box;
+	border-color: $strategi-color;
+}
+
+.breaking-box {
 	float: none;
 	clear: both;
 	margin: 0 auto;
-	
+
 	// This fixes the collapsing margin, but can also be used to distance the box further from the main content
 	padding-top: 1px;
 	padding-bottom: 1px;
-	
-	.primary-box {
-		border-color: $strategi-color;
+
+	.fun-fact-box {
 		padding: 30px;
+	}
+
+	@media screen and (max-width: $screen-sm-max) {
+		&.small {
+			width: 50%;
+		}
 	}
 }
 
 .secondary-box {
-	padding: $secondary-box-padding-y 30px;
+	padding: $box-padding-y $box-padding-x;
 	background: $secondary-box-bg-color;
 	color: $secondary-box-text-color;
 
 	> h3 {
 		margin-top: 0;
 		margin-bottom: 10px;
+		font-size: $large-font;
+		font-weight: $semi-bold;
 	}
 
 	> ul, > p {
