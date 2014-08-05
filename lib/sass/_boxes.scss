@@ -6,6 +6,13 @@
 		line-height: 1.5em;
 	}
 
+	h2 {
+		margin-top: 0;
+		margin-bottom: 10px;
+		font-size: $large-font;
+		font-weight: $semi-bold;
+	}
+
 	&.large {
 		width: 100%;
 	}
@@ -107,13 +114,6 @@
 	padding: $box-padding-y $box-padding-x;
 	background: $secondary-box-bg-color;
 	color: $secondary-box-text-color;
-
-	> h3 {
-		margin-top: 0;
-		margin-bottom: 10px;
-		font-size: $large-font;
-		font-weight: $semi-bold;
-	}
 
 	> ul, > p {
 		margin: 0;
