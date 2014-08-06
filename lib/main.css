@@ -272,11 +272,7 @@ body {
 }
 
 /* line 29, sass/main.scss */
-.module-content-wrapper {
-  width: 100%;
-}
-
-/* line 33, sass/main.scss */
-.portrait {
-  border-radius: 50px;
+a {
+  text-decoration: none;
+  color: inherit;
 }
