@@ -67,6 +67,18 @@ header .menu.filter-menu > ul > li {
   margin: 0 3%;
 }
 
+/* line 1, sass/frame/_right-controls.scss */
+.right-controls {
+  float: right;
+}
+
+/* line 5, sass/frame/_right-controls.scss */
+.right-controls > * {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
 /* line 1, sass/_boxes.scss */
 .suite-module {
   margin: 0;

@@ -1,0 +1,9 @@
+.right-controls {
+	float: right;
+}
+
+.right-controls > * {
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 10px;
+}
