@@ -1,6 +1,7 @@
 .suite-module {
 	margin: 0;
-	float: left;
+	display: inline-block;
+	vertical-align: top;
 
 	p {
 		line-height: 1.5em;
