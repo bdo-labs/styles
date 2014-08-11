@@ -94,6 +94,7 @@
 .breaking-box {
 	float: none;
 	clear: both;
+	display: block;
 	margin: 0 auto;
 
 	// This fixes the collapsing margin, but can also be used to distance the box further from the main content
