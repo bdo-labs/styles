@@ -1,7 +1,14 @@
-@charset "CP850";
+@charset "UTF-8";
 /* line 1, sass/_frame.scss */
 body {
   background-color: white;
+}
+
+/* line 2, sass/frame/_header.scss */
+header .bdo-logo {
+  float: left;
+  padding-left: 11px;
+  width: 96px;
 }
 
 /* line 1, sass/frame/_menu.scss */
