@@ -35,7 +35,7 @@ header .menu > ul > li {
 header .menu.top-menu {
   width: 50%;
   border-bottom: 5px dotted #c8c8c8;
-  font-size: 22px;
+  font-size: 1.5em;
   font-weight: 600;
 }
 /* line 26, sass/frame/_menu.scss */
@@ -100,7 +100,7 @@ header .menu.filter-menu > ul > li {
 .suite-module h2 {
   margin-top: 0;
   margin-bottom: 10px;
-  font-size: 22px;
+  font-size: 1.5em;
   font-weight: 600;
 }
 /* line 17, sass/_boxes.scss */
@@ -161,7 +161,7 @@ header .menu.filter-menu > ul > li {
 }
 /* line 65, sass/_boxes.scss */
 .primary-box > h1, .fun-fact-box > h1 {
-  font-size: 36px;
+  font-size: 2.25em;
   margin: 0 0 36px;
   font-weight: bold;
   color: #34495e;
@@ -246,7 +246,7 @@ header .menu.filter-menu > ul > li {
 @media screen and (max-width: 991px) {
   /* line 1, sass/elements/_action-button.scss */
   .action-button {
-    font-size: 22px;
+    font-size: 1.5em;
   }
 }
 
@@ -275,7 +275,7 @@ header .menu.filter-menu > ul > li {
 
 /* line 11, sass/main.scss */
 body {
-  font-size: 16px;
+  font-size: 1em;
 }
 
 /* line 16, sass/main.scss */
