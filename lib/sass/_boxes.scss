@@ -53,6 +53,10 @@
 
 .primary-box, .secondary-box {
 		margin: $box-margin;
+
+		@media screen and (max-width: $screen-sm-max) {
+			margin: $box-margin/2;
+		}
 }
 
 .primary-box {
@@ -67,6 +71,10 @@
 		margin: 0 0 36px;
 		font-weight: bold;
 		color: $strategi-color;
+
+		@media screen and (max-width: $screen-sm-max) {
+			font-size: $large-font;
+		}
 
 		> a {
 			text-decoration: none;

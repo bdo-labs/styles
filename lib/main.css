@@ -151,41 +151,53 @@ header .menu.filter-menu > ul > li {
 .primary-box, .fun-fact-box, .secondary-box {
   margin: 10px;
 }
+@media screen and (max-width: 991px) {
+  /* line 54, sass/_boxes.scss */
+  .primary-box, .fun-fact-box, .secondary-box {
+    margin: 5px;
+  }
+}
 
-/* line 58, sass/_boxes.scss */
+/* line 62, sass/_boxes.scss */
 .primary-box, .fun-fact-box {
   position: relative;
   border: solid 5px #969696;
   padding: 20px 35px;
 }
-/* line 65, sass/_boxes.scss */
+/* line 69, sass/_boxes.scss */
 .primary-box > h1, .fun-fact-box > h1 {
   font-size: 2.25em;
   margin: 0 0 36px;
   font-weight: bold;
   color: #34495e;
 }
-/* line 71, sass/_boxes.scss */
+@media screen and (max-width: 991px) {
+  /* line 69, sass/_boxes.scss */
+  .primary-box > h1, .fun-fact-box > h1 {
+    font-size: 1.5em;
+  }
+}
+/* line 79, sass/_boxes.scss */
 .primary-box > h1 > a, .fun-fact-box > h1 > a {
   text-decoration: none;
   color: #34495e;
 }
-/* line 78, sass/_boxes.scss */
+/* line 86, sass/_boxes.scss */
 .primary-box h2 > a, .fun-fact-box h2 > a, .primary-box h3 > a, .fun-fact-box h3 > a, .primary-box h4 > a, .fun-fact-box h4 > a {
   text-decoration: none;
   color: black;
 }
-/* line 84, sass/_boxes.scss */
+/* line 92, sass/_boxes.scss */
 .primary-box .descriptive-text, .fun-fact-box .descriptive-text {
   color: #969696;
 }
 
-/* line 89, sass/_boxes.scss */
+/* line 97, sass/_boxes.scss */
 .fun-fact-box {
   border-color: #34495e;
 }
 
-/* line 94, sass/_boxes.scss */
+/* line 102, sass/_boxes.scss */
 .breaking-box {
   float: none;
   clear: both;
@@ -194,24 +206,24 @@ header .menu.filter-menu > ul > li {
   padding-top: 1px;
   padding-bottom: 1px;
 }
-/* line 104, sass/_boxes.scss */
+/* line 112, sass/_boxes.scss */
 .breaking-box .fun-fact-box {
   padding: 30px;
 }
 @media screen and (max-width: 991px) {
-  /* line 109, sass/_boxes.scss */
+  /* line 117, sass/_boxes.scss */
   .breaking-box.small {
     width: 50%;
   }
 }
 
-/* line 115, sass/_boxes.scss */
+/* line 123, sass/_boxes.scss */
 .secondary-box {
   padding: 20px 35px;
   background: #969696;
   color: white;
 }
-/* line 120, sass/_boxes.scss */
+/* line 128, sass/_boxes.scss */
 .secondary-box > ul, .secondary-box > p {
   margin: 0;
 }
