@@ -1,4 +1,3 @@
-@charset "CP850";
 /* line 1, sass/_frame.scss */
 body {
   background-color: white;
@@ -65,7 +64,7 @@ header .menu.filter-menu a {
 }
 /* line 51, sass/frame/_menu.scss */
 header .menu.filter-menu .bdo-dropdown > a:after {
-  content: "";
+  content: "\f0d7";
   font-family: FontAwesome;
   margin-left: 5px;
 }
@@ -289,30 +288,30 @@ button i {
   border-bottom: 1px solid #dddddd;
 }
 
-/* line 7, sass/main.scss */
+/* line 9, sass/main.scss */
 * {
   font-family: OpenSans, Sans-Serif;
 }
 
-/* line 11, sass/main.scss */
+/* line 13, sass/main.scss */
 body {
   font-size: 1em;
 }
 
-/* line 16, sass/main.scss */
+/* line 18, sass/main.scss */
 .status-color.good {
   color: #708e50;
 }
-/* line 20, sass/main.scss */
+/* line 22, sass/main.scss */
 .status-color.warning {
   color: #d29628;
 }
-/* line 24, sass/main.scss */
+/* line 26, sass/main.scss */
 .status-color.danger {
   color: #ac4139;
 }
 
-/* line 29, sass/main.scss */
+/* line 31, sass/main.scss */
 a {
   text-decoration: none;
   color: inherit;
