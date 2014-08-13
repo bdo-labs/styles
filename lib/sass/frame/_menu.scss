@@ -19,15 +19,14 @@ header .menu {
 
 	&.top-menu {
 		width: 50%;
-		border-bottom: 5px dotted $light-grey;
 		font-size: $large-font;
 		font-weight: $semi-bold;
 
 		a {
-			color: $light-grey;
+			color: $grey;
 
 			&.active {
-				color: $grey;
+				color: $dark-grey;
 			}
 		}
 
@@ -42,7 +41,10 @@ header .menu {
 	}
 
 	&.filter-menu {
-		margin-top: 2em;
+		border: 3px dotted $strategi-color;
+		border-left: 0;
+		border-right: 0;
+		padding: 5px 0;
 
 		a {
 			color: black;

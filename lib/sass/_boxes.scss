@@ -22,7 +22,8 @@
 		width: 50%;
 
 		.primary-box {
-			height: 400px - 2*($box-padding-y + $primary-box-border);
+			min-height: 400px - 2*($box-padding-y + $primary-box-border);
+			padding: $box-padding-y 25px;
 
 			@media screen and (max-width: $screen-sm-max) {
 				height: auto;
@@ -38,7 +39,7 @@
 		width: 33.33%;
 
 		.secondary-box {
-			height: 220px - (2*$box-padding-y);
+			min-height: 220px - (2*$box-padding-y);
 
 			@media screen and (max-width: $screen-sm-max) {
 				height: auto;
@@ -53,12 +54,16 @@
 
 .primary-box, .secondary-box {
 		margin: $box-margin;
+
+		@media screen and (max-width: $screen-sm-max) {
+			margin: $box-margin/2;
+		}
 }
 
 .primary-box {
 	position: relative;
 
-	border: solid 5px $primary-box-border-color;
+	border: solid 1px $primary-box-border-color;
 
 	padding: $box-padding-y $box-padding-x;
 
@@ -67,6 +72,10 @@
 		margin: 0 0 36px;
 		font-weight: bold;
 		color: $strategi-color;
+
+		@media screen and (max-width: $screen-sm-max) {
+			font-size: $large-font;
+		}
 
 		> a {
 			text-decoration: none;
@@ -88,7 +97,7 @@
 
 .fun-fact-box {
 	@extend .primary-box;
-	border-color: $strategi-color;
+	border-color: $grey;
 }
 
 .breaking-box {
