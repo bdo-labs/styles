@@ -112,7 +112,7 @@ header .menu.filter-menu > ul > li {
 }
 /* line 24, sass/_boxes.scss */
 .suite-module.medium .primary-box, .suite-module.medium .fun-fact-box {
-  height: 350px;
+  min-height: 350px;
 }
 @media screen and (max-width: 991px) {
   /* line 24, sass/_boxes.scss */
@@ -132,7 +132,7 @@ header .menu.filter-menu > ul > li {
 }
 /* line 40, sass/_boxes.scss */
 .suite-module.small .secondary-box {
-  height: 180px;
+  min-height: 180px;
 }
 @media screen and (max-width: 991px) {
   /* line 40, sass/_boxes.scss */

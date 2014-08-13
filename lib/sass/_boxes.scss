@@ -22,7 +22,7 @@
 		width: 50%;
 
 		.primary-box {
-			height: 400px - 2*($box-padding-y + $primary-box-border);
+			min-height: 400px - 2*($box-padding-y + $primary-box-border);
 
 			@media screen and (max-width: $screen-sm-max) {
 				height: auto;
@@ -38,7 +38,7 @@
 		width: 33.33%;
 
 		.secondary-box {
-			height: 220px - (2*$box-padding-y);
+			min-height: 220px - (2*$box-padding-y);
 
 			@media screen and (max-width: $screen-sm-max) {
 				height: auto;
