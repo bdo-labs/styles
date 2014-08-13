@@ -1,11 +1,11 @@
 .action-button {
-	color: $grey;
+	color: $light-grey;
 	font-size: 0.75em;
 
 	&.main-action {
 		position: absolute;
-		top: 5px;
-		right: 5px;
+		top: 15px;
+		right: 15px;
 	}
 
 	i.fa {

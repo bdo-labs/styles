@@ -23,6 +23,7 @@
 
 		.primary-box {
 			min-height: 400px - 2*($box-padding-y + $primary-box-border);
+			padding: $box-padding-y 25px;
 
 			@media screen and (max-width: $screen-sm-max) {
 				height: auto;
@@ -62,7 +63,7 @@
 .primary-box {
 	position: relative;
 
-	border: solid 5px $primary-box-border-color;
+	border: solid 1px $primary-box-border-color;
 
 	padding: $box-padding-y $box-padding-x;
 
@@ -96,7 +97,7 @@
 
 .fun-fact-box {
 	@extend .primary-box;
-	border-color: $strategi-color;
+	border-color: $grey;
 }
 
 .breaking-box {
