@@ -1,0 +1,333 @@
+/* line 1, sass/_frame.scss */
+body {
+  background-color: white;
+}
+
+/* line 2, sass/frame/_header.scss */
+header .bdo-logo {
+  float: left;
+  padding-left: 11px;
+  width: 96px;
+}
+
+/* line 1, sass/frame/_menu.scss */
+header .menu {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+/* line 6, sass/frame/_menu.scss */
+header .menu a {
+  text-decoration: none;
+  font-weight: 600;
+}
+/* line 11, sass/frame/_menu.scss */
+header .menu ul {
+  list-style: none;
+  padding-left: 0;
+}
+/* line 16, sass/frame/_menu.scss */
+header .menu > ul > li {
+  display: inline-block;
+}
+/* line 20, sass/frame/_menu.scss */
+header .menu.top-menu {
+  width: 50%;
+  font-size: 1.5em;
+  font-weight: 600;
+}
+/* line 25, sass/frame/_menu.scss */
+header .menu.top-menu a {
+  color: #969696;
+}
+/* line 28, sass/frame/_menu.scss */
+header .menu.top-menu a.active {
+  color: #464646;
+}
+/* line 33, sass/frame/_menu.scss */
+header .menu.top-menu > ul {
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 38, sass/frame/_menu.scss */
+header .menu.top-menu li {
+  margin: 0 5%;
+}
+/* line 43, sass/frame/_menu.scss */
+header .menu.filter-menu {
+  border: 3px dotted #34495e;
+  border-left: 0;
+  border-right: 0;
+  padding: 5px 0;
+}
+/* line 49, sass/frame/_menu.scss */
+header .menu.filter-menu a {
+  color: black;
+}
+/* line 53, sass/frame/_menu.scss */
+header .menu.filter-menu .bdo-dropdown > a:after {
+  content: "\f0d7";
+  font-family: FontAwesome;
+  margin-left: 5px;
+}
+/* line 59, sass/frame/_menu.scss */
+header .menu.filter-menu > ul > li {
+  margin: 0 3%;
+}
+
+/* line 1, sass/frame/_right-controls.scss */
+.right-controls {
+  float: right;
+}
+
+/* line 5, sass/frame/_right-controls.scss */
+.right-controls > * {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+/* line 1, sass/_boxes.scss */
+.suite-module {
+  margin: 0;
+  display: inline-block;
+  vertical-align: top;
+}
+/* line 6, sass/_boxes.scss */
+.suite-module p {
+  line-height: 1.5em;
+}
+/* line 10, sass/_boxes.scss */
+.suite-module h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 1.5em;
+  font-weight: 600;
+}
+/* line 17, sass/_boxes.scss */
+.suite-module.large {
+  width: 100%;
+}
+/* line 21, sass/_boxes.scss */
+.suite-module.medium {
+  width: 50%;
+}
+/* line 24, sass/_boxes.scss */
+.suite-module.medium .primary-box, .suite-module.medium .fun-fact-box {
+  min-height: 350px;
+  padding: 20px 25px;
+}
+@media screen and (max-width: 991px) {
+  /* line 24, sass/_boxes.scss */
+  .suite-module.medium .primary-box, .suite-module.medium .fun-fact-box {
+    height: auto;
+  }
+}
+@media screen and (max-width: 991px) {
+  /* line 21, sass/_boxes.scss */
+  .suite-module.medium {
+    width: 100%;
+  }
+}
+/* line 38, sass/_boxes.scss */
+.suite-module.small {
+  width: 33.33%;
+}
+/* line 41, sass/_boxes.scss */
+.suite-module.small .secondary-box {
+  min-height: 180px;
+}
+@media screen and (max-width: 991px) {
+  /* line 41, sass/_boxes.scss */
+  .suite-module.small .secondary-box {
+    height: auto;
+  }
+}
+@media screen and (max-width: 991px) {
+  /* line 38, sass/_boxes.scss */
+  .suite-module.small {
+    width: 100%;
+  }
+}
+
+/* line 55, sass/_boxes.scss */
+.primary-box, .fun-fact-box, .secondary-box {
+  margin: 10px;
+}
+@media screen and (max-width: 991px) {
+  /* line 55, sass/_boxes.scss */
+  .primary-box, .fun-fact-box, .secondary-box {
+    margin: 5px;
+  }
+}
+
+/* line 63, sass/_boxes.scss */
+.primary-box, .fun-fact-box {
+  position: relative;
+  border: solid 1px #34495e;
+  padding: 20px 35px;
+}
+/* line 70, sass/_boxes.scss */
+.primary-box > h1, .fun-fact-box > h1 {
+  font-size: 2.25em;
+  margin: 0 0 36px;
+  font-weight: bold;
+  color: #464646;
+}
+@media screen and (max-width: 991px) {
+  /* line 70, sass/_boxes.scss */
+  .primary-box > h1, .fun-fact-box > h1 {
+    font-size: 1.5em;
+  }
+}
+/* line 80, sass/_boxes.scss */
+.primary-box > h1 > a, .fun-fact-box > h1 > a {
+  text-decoration: none;
+  color: #34495e;
+}
+/* line 87, sass/_boxes.scss */
+.primary-box h2 > a, .fun-fact-box h2 > a, .primary-box h3 > a, .fun-fact-box h3 > a, .primary-box h4 > a, .fun-fact-box h4 > a {
+  text-decoration: none;
+  color: black;
+}
+/* line 93, sass/_boxes.scss */
+.primary-box .descriptive-text, .fun-fact-box .descriptive-text {
+  color: #969696;
+}
+
+/* line 98, sass/_boxes.scss */
+.fun-fact-box {
+  border-color: #969696;
+}
+
+/* line 103, sass/_boxes.scss */
+.breaking-box {
+  float: none;
+  clear: both;
+  display: block;
+  margin: 0 auto;
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+/* line 113, sass/_boxes.scss */
+.breaking-box .fun-fact-box {
+  padding: 30px;
+}
+@media screen and (max-width: 991px) {
+  /* line 118, sass/_boxes.scss */
+  .breaking-box.small {
+    width: 50%;
+  }
+}
+
+/* line 124, sass/_boxes.scss */
+.secondary-box {
+  padding: 20px 35px;
+  background: #969696;
+  color: white;
+}
+/* line 129, sass/_boxes.scss */
+.secondary-box > ul, .secondary-box > p {
+  margin: 0;
+}
+
+/* line 1, sass/elements/_button.scss */
+button {
+  border: 2px solid #34495e;
+  padding: 2px 25px;
+  margin: 5px;
+  background: white;
+  color: #969696;
+  font-weight: 600;
+  cursor: pointer;
+}
+/* line 12, sass/elements/_button.scss */
+button.centered {
+  margin: 5px auto;
+  display: block;
+}
+/* line 17, sass/elements/_button.scss */
+button i {
+  margin-right: 10px;
+}
+
+/* line 1, sass/elements/_action-button.scss */
+.action-button {
+  color: #c8c8c8;
+  font-size: 0.75em;
+}
+/* line 5, sass/elements/_action-button.scss */
+.action-button.main-action {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+/* line 11, sass/elements/_action-button.scss */
+.action-button i.fa {
+  border: solid 2px;
+  border-radius: 50%;
+  padding: 4px;
+}
+/* line 17, sass/elements/_action-button.scss */
+.action-button i.fa-fw {
+  padding: 3px 1px;
+}
+@media screen and (max-width: 991px) {
+  /* line 17, sass/elements/_action-button.scss */
+  .action-button i.fa-fw {
+    padding: 5px 1px;
+  }
+}
+@media screen and (max-width: 991px) {
+  /* line 1, sass/elements/_action-button.scss */
+  .action-button {
+    font-size: 1.5em;
+  }
+}
+
+/* line 1, sass/elements/_row-separated-table.scss */
+.row-separated-table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* line 5, sass/elements/_row-separated-table.scss */
+.row-separated-table td, .row-separated-table th {
+  padding: 8px;
+}
+/* line 9, sass/elements/_row-separated-table.scss */
+.row-separated-table th {
+  border-bottom: 2px solid #dddddd;
+}
+/* line 13, sass/elements/_row-separated-table.scss */
+.row-separated-table tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+/* line 9, sass/styles.scss */
+* {
+  font-family: OpenSans, Sans-Serif;
+}
+
+/* line 13, sass/styles.scss */
+body {
+  font-size: 1em;
+}
+
+/* line 18, sass/styles.scss */
+.status-color.good {
+  color: #708e50;
+}
+/* line 22, sass/styles.scss */
+.status-color.warning {
+  color: #d29628;
+}
+/* line 26, sass/styles.scss */
+.status-color.danger {
+  color: #ac4139;
+}
+
+/* line 31, sass/styles.scss */
+a {
+  text-decoration: none;
+  color: inherit;
+}
