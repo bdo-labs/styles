@@ -5,6 +5,7 @@
 
 SHELL:=/bin/bash
 PATH:=./node_modules/.bin:$(PATH)
+COMPASS?=$(shell type -p compass)
 
 
 #
@@ -18,7 +19,8 @@ REPORTER?=spec
 # Sources
 #
 
-SRC:=$(shell find -E lib -regex '/^.*(html|js|json|css)$$/')
+SASS:=$(shell find lib -name '*.scss')
+SRC:=$(shell find -E lib -regex '/^.*(html|js|json)$$/') $(SASS:%.scss=%.css)
 TESTS:=$(shell find lib -name '*.test.js')
 
 
@@ -33,6 +35,9 @@ build: node_modules $(SRC)
 	@echo "    styles was built!"
 	@echo ""
 
+%.css: %.scss
+	$(COMPASS) compile
+
 node_modules: package.json
 	npm install
 
@@ -42,5 +47,5 @@ test: build
 clean:
 	rm -fr build
 
-.PHONY: clean test build
+.PHONY: clean test
 
