@@ -6,3 +6,4 @@ build
 # Vim files
 *~
 *.swp
+lib/styles.css
