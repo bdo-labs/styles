@@ -16,48 +16,50 @@ header .menu {
 	> ul > li {
 		display: inline-block;
 	}
+}
 
-	&.top-menu {
-		width: 50%;
-		font-size: $large-font;
-		font-weight: $semi-bold;
+.filter-menu {
+	border-top: 3px dotted $strategi-color;
+	padding: 5px 0;
 
-		a {
-			color: $grey;
-
-			&.active {
-				color: $dark-grey;
-			}
-		}
-
-		> ul {
-			margin-left: auto;
-			margin-right: auto;
-		}
-
-		li {
-			margin: 0 5%;
-		}
+	a {
+		color: black;
 	}
 
-	&.filter-menu {
-		border: 3px dotted $strategi-color;
-		border-left: 0;
-		border-right: 0;
-		padding: 5px 0;
+	.bdo-dropdown > a:after {
+		content: "\f0d7"; // Font Awesome caret-down icon
+		font-family: FontAwesome;
+		margin-left: 5px;
+	}
 
-		a {
-			color: black;
-		}
-
-		.bdo-dropdown > a:after {
-			content: "\f0d7"; // Font Awesome caret-down icon
-			font-family: FontAwesome;
-			margin-left: 5px;
-		}
-
-		> ul > li {
+	> ul {
+		border-bottom: 3px dotted $strategi-color;
+		> li {
 			margin: 0 3%;
 		}
 	}
 }
+
+.top-menu {
+	width: 50%;
+	font-size: $large-font;
+	font-weight: $semi-bold;
+
+	a {
+		color: $grey;
+
+		&.active {
+			color: $dark-grey;
+		}
+	}
+
+	> ul {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	li {
+		margin: 0 5%;
+	}
+}
+
