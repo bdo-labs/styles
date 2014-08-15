@@ -1,9 +1,18 @@
-header .menu {
-	margin-left: auto;
-	margin-right: auto;
-	text-align: center;
+
+/*
+ * Header.
+ * TODO Remove unnecessary nesting.
+ */
+
+header {
+	.menu  {
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+	}
 
 	a {
+		color: rgb(30,30,30);
 		text-decoration: none;
 		font-weight: $semi-bold;
 	}
@@ -22,10 +31,6 @@ header .menu {
 	border-top: 3px dotted $strategi-color;
 	padding: 5px 0;
 
-	a {
-		color: black;
-	}
-
 	.bdo-dropdown > a:after {
 		content: "\f0d7"; // Font Awesome caret-down icon
 		font-family: FontAwesome;
@@ -34,6 +39,7 @@ header .menu {
 
 	> ul {
 		border-bottom: 3px dotted $strategi-color;
+		margin: 0;
 		> li {
 			margin: 0 3%;
 		}
