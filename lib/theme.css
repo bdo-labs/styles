@@ -1,0 +1,75 @@
+
+/*
+ * Theme
+ *
+ * Here you specify everything that should be possible to change
+ * depending on the customer. Note the use of variables, so only
+ * the first paragraph is really necessary to change to get a
+ * completely different feel.
+ */
+
+/*
+ * Variables.
+ */
+
+:root {
+	--id-color: rgb(52,73,94);
+	--base-color: rgb(30,30,30);
+	--sec-bg-color: rgb(220,220,220);
+	--sep-color: lightgrey;
+}
+
+/*
+ * Single property selectors.
+ */
+
+.id-border-color {
+	border-color: var(--id-color);
+}
+
+.id-txt-color {
+	color: var(--id-color);
+}
+
+.id-bg-color {
+	background-color: var(--id-color);
+}
+
+/*
+ * Specific theming.
+ */
+
+.primary-box {
+	border-color: var(--id-color);
+	color: var(--id-color);
+}
+
+.top-menu .active {
+	color: color(var(--base-color) shade(30%));
+}
+
+.filter-menu {
+	border-color: var(--id-color);
+}
+
+button {
+	border-color: var(--id-color);
+}
+
+.row-separated-table th,
+.row-separated-table tr {
+	border-color: var(--sep-color);
+}
+
+.status-color.good {
+  color: #708e50;
+}
+
+.status-color.warning {
+  color: #d29628;
+}
+
+.status-color.danger {
+  color: #ac4139;
+}
+

@@ -1,0 +1,7 @@
+
+.secondary-box {
+  padding: var(--spacing);
+  background: grey;
+  color: white;
+}
+

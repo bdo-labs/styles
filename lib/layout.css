@@ -1,0 +1,50 @@
+
+/*
+ * Variables.
+ */
+
+:root {
+	--spacing: .5em;
+}
+
+/*
+ * Reset.
+ */
+
+ul,
+ol,
+menu {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+/*
+ * Header.
+ */
+
+header {
+	border-bottom: 3px dotted var(--id-color);
+	margin-bottom: var(--spacing);
+	padding: var(--spacing);
+}
+	header .controls {
+		float: right;
+	}
+	header .menu {
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+	}
+
+#page-wrapper {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 90em;
+}
+
+.primary-box,
+.secondary-box {
+  margin: var(--spacing);
+}
+

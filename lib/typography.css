@@ -1,0 +1,98 @@
+
+/*
+ * Variables.
+ */
+
+:root {
+  --semi-bold: 600;
+  --large-font: 2em;
+}
+
+/*
+ * Fonts.
+ */
+
+@import "font-awesome";
+@font-face {
+  font-family: 'OpenSans';
+  src: url('assets/fonts/OpenSans-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'OpenSans';
+  src: url('assets/fonts/OpenSans-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'OpenSans';
+  src: url('assets/fonts/OpenSans-Light.ttf') format('truetype');
+  font-weight: lighter;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'OpenSans';
+  src: url('assets/fonts/OpenSans-Semibold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+/*
+ * Scale.
+ */
+
+body,
+input,
+select,
+textarea {
+  font-family: OpenSans, Helvetica Neue, Helvetica Sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  color: var(--base-color);
+}
+
+body {
+  font-size: 1.6em;
+}
+
+p {
+  line-height: 1.5em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: var(--spacing);
+  font-weight: var(--semi-bold);
+}
+
+/*
+ * Dimensions.
+ */
+
+.semi-bold,
+button,
+header a,
+.top-menu {
+  font-weight: var(--semi-bold);
+}
+.top-menu {
+  font-size: var(--large-font);
+}
+
+/*
+ * Decoration.
+ */
+
+a {
+  text-decoration: none;
+  color: color(var(--base-color) tint(20%));
+}
+

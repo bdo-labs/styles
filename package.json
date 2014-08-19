@@ -1,41 +1,50 @@
 {
-	"name": "styles",
-	"version": "0.0.0",
-	"description": "The common styles for bdo suite",
-	"main": "lib/index.js",
-	"style": "lib/main.css",
-	"repository": "git://github.com/bdo-labs/styles.git",
-	"license": "MIT",
-	"scripts": {
-		"test": "karma start"
-	},
-	"atomify": {
-		"js": {
-			"entry": "lib/index.js",
-			"output": "build/build.js"
-		},
-		"css": {
-			"entry": "index.css",
-			"output": "build/index.css",
-			"assets": {
-				"dest": "build/assets/",
-				"prefix": "assets/"
-			}
-		}
-
-	},
-	"browserify": {
-		"transform": [
-			"partialify"
-		]
-	},
-	"devDependencies": {
-		"angular": "^1.2.18",
-		"atomify": "^3.1.2",
-		"partialify": "^3.1.1",
-		"browserify": "^4.2.0",
-		"karma": "^0.12.16",
-		"karma-browserifast": "^0.6.1",
-		"karma-jasmine": "^0.1.5"
-	}
+  "name": "styles",
+  "version": "0.0.0",
+  "description": "The common styles for bdo suite",
+  "style": "index.css",
+  "repository": "git://github.com/bdo-labs/styles.git",
+  "license": "MIT",
+  "atomify": {
+    "css": {
+      "entry": "index.css",
+      "assets": {
+        "dest": "build/assets",
+        "prefix": "assets/"
+      },
+      "plugins": [
+        "rework-calc",
+        "rework-color-function",
+        "rework-custom-media",
+        "rework-font-variant",
+        "rework-hex-alpha",
+        "rework-plugin-colors",
+        "rework-rebeccapurple",
+        "rework-vars"
+      ]
+    }
+  },
+  "browserify": {
+    "transform": [
+      "partialify"
+    ]
+  },
+  "dependencies": {
+    "normalize.css": "^3.0.1",
+    "font-awesome": "bdo-labs/font-awesome"
+  },
+  "devDependencies": {
+    "atomify": "^3.1.2",
+    "browserify": "^4.2.0",
+    "partialify": "^3.1.1",
+    "rework": "^1.0.0",
+    "rework-calc": "^1.1.0",
+    "rework-color-function": "^1.0.0",
+    "rework-custom-media": "^0.1.1",
+    "rework-font-variant": "^1.0.1",
+    "rework-hex-alpha": "^1.0.0",
+    "rework-plugin-colors": "^1.0.3",
+    "rework-rebeccapurple": "^1.0.1",
+    "rework-vars": "^3.0.0"
+  }
 }

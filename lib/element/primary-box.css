@@ -1,0 +1,21 @@
+
+.primary-box {
+  position: relative;
+  border: solid 1px;
+  /*
+   * padding: var(--spacing) calc(var(--spacing) * 2);
+   * This results in exceeding the call-stack.
+   * Looks like there's an issue in rework-calc.
+   */
+  padding: var(--spacing);
+}
+
+  .primary-box h1 {
+    color: inherit;
+    text-align: center;
+  }
+
+    .primary-box a {
+      color: inherit;
+    }
+

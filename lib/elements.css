@@ -1,0 +1,147 @@
+
+/*
+ * There are definitely improvements to be made here still.
+ *   - replacing media-queries with element-queries
+ *   - Move coloring to theme
+ *   - ++
+ */
+
+/*
+ * Import.
+ */
+
+@import "./element/primary-box.css";
+@import "./element/secondary-box.css";
+@import "./element/action-button.css";
+@import "./element/top-menu.css";
+@import "./element/filter-menu.css";
+
+.bdo-logo {
+  float: left;
+  padding-left: 11px;
+  width: 96px;
+}
+
+.controls > * {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+
+button {
+  background: white;
+  color: grey;
+  cursor: pointer;
+  margin: 5px;
+  padding: 2px 25px;
+}
+button.centered {
+  margin: 5px auto;
+  display: block;
+}
+button i {
+  margin-right: 10px;
+}
+
+.row-separated-table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.row-separated-table td,
+.row-separated-table th {
+  padding: 8px;
+}
+.row-separated-table th {
+	border-width: 0 0 2px 0;
+	border-style: solid;
+}
+.row-separated-table tr {
+	border-width: 0 0 1px 0;
+	border-style: solid;
+}
+
+
+.suite-module {
+  margin: 0;
+  display: inline-block;
+  vertical-align: top;
+}
+.suite-module.large {
+  width: 100%;
+}
+.suite-module.medium {
+	max-width: 30em;
+  width: 50%;
+}
+.suite-module.medium .primary-box {
+  min-height: calc(400px - 2*(35px + 5px));
+}
+.suite-module.small {
+	max-width: 15em;
+  width: 33.33%;
+}
+
+.suite-module.small .secondary-box {
+  min-height: calc(220px - (2*20px));
+}
+
+.descriptive-text {
+  color: grey;
+}
+
+/* TODO Add primary-box class */
+.fun-fact-box {
+  border-color: grey;
+}
+
+.breaking-box {
+  float: none;
+  clear: both;
+  display: block;
+  margin: 0 auto;
+
+  /* 
+   * This fixes the collapsing margin, but can also be used to
+   * distance the box further from the main content.
+   */
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+
+.breaking-box .fun-fact-box {
+  padding: 30px;
+}
+
+/*
+ * Media-query sizes.
+ */
+
+@custom-media --narrow-window screen and (max-width: 767px);
+@custom-media --midsize-window screen and (max-width: 991px);
+@custom-media --wide-window screen and (max-width: 1199px);
+
+@media (--midsize-window) {
+  .suite-module.medium .primary-box,
+  .suite-module.small .secondary-box {
+    height: auto;
+  }
+
+  .suite-module.medium, .suite-module.small {
+    width: 100%;
+  }
+
+  .primary-box,
+  .secondary-box {
+    margin: calc(10px/2);
+  }
+
+  .breaking-box.small {
+    width: 50%;
+  }
+
+  .action-button i.fa-fw {
+    padding: 5px 1px;
+  }
+}
+

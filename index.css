@@ -1,1 +1,7 @@
-@import './lib/main.css';
+
+@import "normalize.css";
+@import "./lib/typography.css";
+@import "./lib/layout.css";
+@import "./lib/elements.css";
+@import "./lib/theme.css";
+
