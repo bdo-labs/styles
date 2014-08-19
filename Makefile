@@ -1,46 +1,30 @@
 
 #
-# Path
+# Environment
 #
 
 SHELL:=/bin/bash
 PATH:=./node_modules/.bin:$(PATH)
-
-
-#
-# Settings
-#
-
-REPORTER?=spec
-
+OUT_DIR?=build
 
 #
 # Sources
 #
 
-SRC:=$(shell find -E lib -regex '/^.*(html|js|json|css)$$/')
-TESTS:=$(shell find lib -name '*.test.js')
-
+SRC:= $(shell find lib -name '*.css')
 
 #
 # Targets
 #
 
-build: node_modules $(SRC)
-	mkdir -p $@
-	atomify
-	@echo ""
-	@echo "    styles was built!"
-	@echo ""
+$(OUT_DIR): node_modules $(SRC)
+	atomify --output $@/build
 
 node_modules: package.json
 	npm install
 
-test: build
-	karma start
-
 clean:
-	rm -fr build
+	rm -fr $(OUT_DIR)
 
-.PHONY: clean test build
+.PHONY: clean
 

@@ -1,6 +1,6 @@
 
 styles
-============
+======
 
 The common styles for bdo suite
 
@@ -8,20 +8,7 @@ The common styles for bdo suite
 ## Installation
 
     $ git clone https://github.com/bdo-labs/styles.git
-    $ make -s
-
-
-## Running tests
-
-    $ make -s test
-
-
-## API
-
-```Javascript
-    var styles = require('styles');
-```
-
+    $ make
 
 
 ## License
