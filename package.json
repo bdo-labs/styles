@@ -5,13 +5,17 @@
   "style": "index.css",
   "repository": "git://github.com/bdo-labs/styles.git",
   "license": "MIT",
+  "scripts": {
+    "build": "atomify",
+    "clean": "rm -fr build"
+  },
   "atomify": {
+    "assets": {
+      "dest": "build/assets",
+      "prefix": "build/assets/"
+    },
     "css": {
       "entry": "index.css",
-      "assets": {
-        "dest": "build/assets",
-        "prefix": "assets/"
-      },
       "plugins": [
         "rework-calc",
         "rework-color-function",
@@ -21,7 +25,8 @@
         "rework-plugin-colors",
         "rework-rebeccapurple",
         "rework-vars"
-      ]
+      ],
+      "output": "build/build.css"
     }
   },
   "browserify": {
