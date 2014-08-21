@@ -55,7 +55,7 @@ html {
 }
 
 body {
-  font-size: 1.6em;
+  font-size: 1.5em;
 }
 
 p {
@@ -69,8 +69,16 @@ h4,
 h5,
 h6 {
   margin-top: 0;
-  margin-bottom: var(--spacing);
+  margin-bottom: 1em;
   font-weight: var(--semi-bold);
+  letter-spacing: -.05em;
+  text-rendering: optimizelegibility;
+}
+
+.description {
+  color: color(var(--base-color) tint(70%));
+  font-size: .8em;
+  line-height: 2em;
 }
 
 /*

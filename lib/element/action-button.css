@@ -1,16 +1,16 @@
 
-.action-button {
+.action-btn {
   color: lightgrey;
   font-size: 0.5em;
 }
 
-.action-button.main-action {
+.action-btn.action-edit {
   position: absolute;
   top: 15px;
   right: 15px;
 }
 
-.action-button i.fa {
+.action-btn i.fa {
   border: solid 2px lightgrey;
   border-radius: 100%;
   padding: var(--spacing) .4em;

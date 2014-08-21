@@ -44,6 +44,20 @@ button i {
   margin-right: 10px;
 }
 
+
+
+.flat-btn {
+  background-color: var(--flat-color);
+  border-radius: .25em;
+  box-sizing: border-box;
+  color: var(--id-color);
+  display: inline-block;
+  padding: .25em 1em;
+  margin: .25em;
+  text-align: center;
+  width: 100%;
+}
+
 .row-separated-table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -53,12 +67,12 @@ button i {
   padding: 8px;
 }
 .row-separated-table th {
-	border-width: 0 0 2px 0;
-	border-style: solid;
+  border-width: 0 0 2px 0;
+  border-style: solid;
 }
 .row-separated-table tr {
-	border-width: 0 0 1px 0;
-	border-style: solid;
+  border-width: 0 0 1px 0;
+  border-style: solid;
 }
 
 
@@ -71,14 +85,14 @@ button i {
   width: 100%;
 }
 .suite-module.medium {
-	max-width: 30em;
+  max-width: 30em;
   width: 50%;
 }
 .suite-module.medium .primary-box {
-  min-height: calc(400px - 2*(35px + 5px));
+  min-height: 384px;
 }
 .suite-module.small {
-	max-width: 15em;
+  max-width: 15em;
   width: 33.33%;
 }
 

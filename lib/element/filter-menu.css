@@ -2,9 +2,20 @@
 .filter-menu {
   padding: 5px 0;
 }
+
   .filter-menu .bdo-dropdown > a:after {
     content: "\f0d7";
     font-family: fontawesome;
     margin-left: 5px;
+  }
+
+  .filter-menu li {
+    display: inline-block;
+    margin-left: var(--spacing);
+    margin-right: var(--spacing);
+  }
+
+  .filter-menu ul ul {
+    line-height: 2em;
   }
 

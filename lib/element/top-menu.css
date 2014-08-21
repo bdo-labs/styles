@@ -2,11 +2,14 @@
 .top-menu {
   width: 50%;
 }
+
   .top-menu ul {
     margin-left: auto;
     margin-right: auto;
   }
+
     .top-menu li {
+      display: inline-block;
       margin: 0 5%;
     }
 

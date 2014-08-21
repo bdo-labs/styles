@@ -13,10 +13,14 @@
  */
 
 :root {
-	--id-color: rgb(52,73,94);
-	--base-color: rgb(30,30,30);
-	--sec-bg-color: rgb(220,220,220);
-	--sep-color: lightgrey;
+  --id-color: rgb(52,73,94);
+  --base-color: rgb(30,30,30);
+  --sec-bg-color: rgb(220,220,220);
+  --sep-color: lightgrey;
+  --flat-color: lightgrey;
+  --good-color: rgb(140,159,124);
+  --warning-color: rgb(254,190,108);
+  --bad-color: rgb(200,91,92);
 }
 
 /*
@@ -24,15 +28,15 @@
  */
 
 .id-border-color {
-	border-color: var(--id-color);
+  border-color: var(--id-color);
 }
 
 .id-txt-color {
-	color: var(--id-color);
+  color: var(--id-color);
 }
 
 .id-bg-color {
-	background-color: var(--id-color);
+  background-color: var(--id-color);
 }
 
 /*
@@ -40,36 +44,45 @@
  */
 
 .primary-box {
-	border-color: var(--id-color);
-	color: var(--id-color);
+  border-color: var(--id-color);
+  color: var(--id-color);
 }
 
 .top-menu .active {
-	color: color(var(--base-color) shade(30%));
+  color: color(var(--base-color) shade(30%));
 }
 
 .filter-menu {
-	border-color: var(--id-color);
+  border-color: var(--id-color);
 }
 
 button {
-	border-color: var(--id-color);
+  border-color: var(--id-color);
 }
 
 .row-separated-table th,
 .row-separated-table tr {
-	border-color: var(--sep-color);
+  border-color: var(--sep-color);
 }
 
 .status-color.good {
-  color: #708e50;
+  color: var(--good-color);
+}
+.pie .good {
+  fill: var(--good-color);
 }
 
 .status-color.warning {
-  color: #d29628;
+  color: var(--warning-color);
+}
+.pie .medium {
+  fill: var(--warning-color);
 }
 
 .status-color.danger {
-  color: #ac4139;
+  color: var(--bad-color)
+}
+.pie .bad {
+  fill: var(--bad-color)
 }
 
