@@ -24,14 +24,14 @@ menu {
  */
 
 #page-wrapper > header {
-  border-bottom: 3px dotted var(--id-color);
-  margin-bottom: var(--spacing);
   padding: var(--spacing);
 }
   header .controls {
     float: right;
+    margin-top: 10px;
   }
   header .menu {
+    border-bottom: 3px dotted var(--id-color);
     margin-left: auto;
     margin-right: auto;
     text-align: center;

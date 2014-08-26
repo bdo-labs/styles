@@ -68,21 +68,40 @@ button {
 .status-color.good {
   color: var(--good-color);
 }
-.pie .good {
-  fill: var(--good-color);
-}
-
 .status-color.warning {
   color: var(--warning-color);
+}
+.status-color.danger {
+  color: var(--bad-color)
+}
+
+.pie .good {
+  fill: var(--good-color);
 }
 .pie .medium {
   fill: var(--warning-color);
 }
-
-.status-color.danger {
-  color: var(--bad-color)
-}
 .pie .bad {
   fill: var(--bad-color)
+}
+
+.visual .good {
+  stroke: var(--good-color);
+}
+.visual .warning {
+  stroke: var(--warning-color);
+}
+.visual .danger {
+  stroke: var(--bad-color)
+}
+
+.bdo-progress .bar {
+  background: var(--warning-color);
+}
+.bdo-progress .bar .low {
+  background: var(--bad-color);
+}
+.bdo-progress .bar .high {
+  background: var(--good-color);
 }
 

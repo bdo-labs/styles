@@ -18,8 +18,8 @@
 
 .bdo-logo {
   float: left;
-  padding-left: 11px;
-  width: 96px;
+  margin-top: 15px;
+  width: 80px;
 }
 
 .controls > * {
@@ -31,36 +31,52 @@
 
 button {
   background: white;
-  color: grey;
+  border-radius: .3em;
+  border-color: lightgrey;
+  color: var(--id-color);
   cursor: pointer;
   margin: 5px;
   padding: 2px 25px;
 }
 button.centered {
-  margin: 5px auto;
-  display: block;
+  position: absolute;
+  top: 50%;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 button i {
   margin-right: 10px;
 }
 
+.aright {
+  text-align: right;
+}
 
+label {
+  margin-right: .5em;
+}
 
 .flat-btn {
   background-color: var(--flat-color);
-  border-radius: .25em;
+  border-radius: .3em;
   box-sizing: border-box;
   color: var(--id-color);
-  display: inline-block;
+  display: block;
   padding: .25em 1em;
-  margin: .25em;
+  margin-bottom: .25em;
+  margin-top: .25em;
   text-align: center;
-  width: 100%;
 }
 
 .row-separated-table {
   border-collapse: collapse;
   border-spacing: 0;
+  width: 100%;
 }
 .row-separated-table td,
 .row-separated-table th {

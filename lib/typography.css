@@ -92,7 +92,10 @@ header a,
   font-weight: var(--semi-bold);
 }
 .top-menu {
-  font-size: var(--large-font);
+  font-size: 1.5em;
+}
+header .menu {
+  line-height: 3em;
 }
 
 /*
@@ -102,5 +105,6 @@ header a,
 a {
   text-decoration: none;
   color: color(var(--base-color) tint(20%));
+  cursor: pointer;
 }
 

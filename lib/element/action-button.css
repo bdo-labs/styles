@@ -2,12 +2,9 @@
 .action-btn {
   color: lightgrey;
   font-size: 0.5em;
-}
-
-.action-btn.action-edit {
   position: absolute;
-  top: 15px;
-  right: 15px;
+  top: 1.5em;
+  right: 1.5em;
 }
 
 .action-btn i.fa {
